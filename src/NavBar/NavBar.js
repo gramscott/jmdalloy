@@ -4,7 +4,9 @@ const NavBar = () => {
 
   return (
     
-    <div>NavBar</div>
+    <div>
+    picture services get a quote Meet Josh FAQ Terms and conditions
+    </div>
 
   )
 }

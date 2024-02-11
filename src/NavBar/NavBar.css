@@ -4,11 +4,14 @@
     align-items: center; 
     padding: 10px; 
     height: 100px; 
+    margin-bottom: 30px;
+    padding-top: 30px;
   }
   
   nav .nav-item .nav-link {
     color: orangered;
     font-size: 15px;
     margin: 0 10px;
+    padding-left: 30px;
   }
   

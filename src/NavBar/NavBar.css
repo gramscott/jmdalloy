@@ -1,3 +1,14 @@
-.navbar-nav .nav-link {
+.logo-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 10px; 
+    height: 100px; 
+  }
+  
+  nav .nav-item .nav-link {
     color: orangered;
-}
+    font-size: 15px;
+    margin: 0 10px;
+  }
+  

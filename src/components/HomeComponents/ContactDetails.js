@@ -34,17 +34,32 @@ const ContactDetails = () => {
      </ul>
     </div>
     <div>
-    <table className='table'>
-    <h3>
-    Opening Hours
-    </h3>
-    </table>
+
+    <div className='table-container'>
+  <h3 className='opening-hours'>Opening Hours</h3>
+  <div className="hours-grid">
+    <div>
+      <p>Monday</p>
+      <p>08:30 - 17:00</p>
+      <p>Tuesday</p>
+      <p>08:30 - 17:00</p>
+      <p>Wednesday</p>
+      <p>08:30 - 17:00</p>
     </div>
+    <div>
+      <p>Thursday</p>
+      <p>08:30 - 17:00</p>
+      <p>Friday</p>
+      <p>08:30 - 17:00</p>
+        <p>Saturday</p>
+        <p>Closed</p>
+        <p>Sunday</p>
+        <p>Closed</p>
     </div>
-
-
-
-    
+  </div>
+</div>
+</div>
+    </div>
 
   )
 }

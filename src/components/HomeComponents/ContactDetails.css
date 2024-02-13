@@ -1,65 +1,78 @@
 .contact-wrapper {
     display:flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 30px;
+    padding-left: 50px;
 }
 
 .contacts { 
     display: flex;
-    justify-content: center;
     gap: 20px; 
     margin: 10px;
     font-size: 20px;
+    flex-wrap: wrap;
   }
 
   .contacts b {
     color: black;
     background-color: orangered;
     border: 2px solid orangered;
+    border-radius: 5px;
     padding: 10px;
-    text-align: center; 
     display: inline-block;
     margin-bottom: 10px;
+    transition: hover 0.3s ease;
   }
+
+  .contacts b:hover {
+    color: white;
+  }
+
+  .contacts a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: hover 0.3s ease;
+  }
+
+  .contacts a:hover {
+    color: white;
+  }
+
 
   .icon-spacing {
     margin-right: 10px;
   }
 
-  .address-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* gap: 20px; */
-    margin: 10px;
-    font-size: 20px;
-    color: white;
-  }
 
-  .address {
-    list-style: none;
-    margin-right: 400px;
-  }
 
   .table-container{
-    text-align: center;
+    padding-left: 50px;
+    font-family: 'Arial', sans-serif;
+    padding: 30px;
+    margin: 30px;
   }
 
   .opening-hours {
-    color: white;
+    color: white; 
   }
 
   .hours-grid {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
   }
   
   .hours-grid > div {
     padding: 10px;
-    border: 1px solid white;
     color: white;
+  }
+
+  .day {
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
   }
   
   

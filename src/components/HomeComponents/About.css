@@ -1,7 +1,20 @@
 .intro {
-    padding: 50px 0;
-    color: white;  
-    padding-left: 40px;
+    padding: 30px;
+    color: white;
     font-style: italic;
-     
+    font-family: 'Arial', sans-serif;
+    border: 1px solid white;
+    border-radius: 50px;
+    margin: 40px; 
+    display: inline-block;
+    max-width: 90%; 
+}
+
+.intro h2 {
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-style: normal;
+    margin-bottom: 15px;
 }

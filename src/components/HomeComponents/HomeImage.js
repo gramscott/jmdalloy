@@ -1,10 +1,11 @@
 import React from 'react'
-import homeImage from '../../images/JMD_Home_pic.png';
+import placeHolderImage from '../../images/placeholder_alloy.png';
+import './HomeImage.css'
 
 const HomeImage = () => {
   return (
     <div>
-   <img src = {homeImage} alt="homeImage" className="home-image"/>
+   <img src = {placeHolderImage} alt="placeHolderImage" className="placeholder-image"/>
     </div>
 
   )

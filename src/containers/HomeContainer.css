@@ -4,14 +4,3 @@
     align-items: flex-start;
     gap: 20px; 
   }
-
-  .contact-wrapper, .placeholder-image {
-    flex: 1;
-  }
-  
-
-  .placeholder-image {
-    max-width: 100%;
-    height: auto; /* Adjust height as needed, but auto for aspect ratio */
-  }
-

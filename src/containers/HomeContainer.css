@@ -1,15 +1,17 @@
 .parent-container {
-    justify-content: space-between;
-    display: flex;
-    
-}
-/* 
-.contact-wrapper, .home-image-container {
-    flex: 1; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start;
+    gap: 20px; 
   }
 
+  .contact-wrapper, .placeholder-image {
+    flex: 1;
+  }
+  
 
-  .home-image-container img {
-    width: 10%;
-    height: auto;
-  } */
+  .placeholder-image {
+    max-width: 100%;
+    height: auto; /* Adjust height as needed, but auto for aspect ratio */
+  }
+

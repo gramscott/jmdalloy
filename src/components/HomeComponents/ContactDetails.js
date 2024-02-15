@@ -59,12 +59,9 @@ const ContactDetails = () => {
     <div className="day">
         <p>Saturday: Closed</p>
     </div>
-    </div>
-    <div>
     <div className="day">
         <p>Sunday: Closed</p>
     </div>
-
     </div>
     </div>
     </div>

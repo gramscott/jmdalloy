@@ -1,7 +1,7 @@
 import React from 'react'
 import About from '../components/HomeComponents/About'
 import ContactDetails from '../components/HomeComponents/ContactDetails'
-import HomeImage from '../components/HomeImage'
+import HomeImage from '../components/HomeComponents/HomeImage'
 
 const HomeContainer = () => {
 

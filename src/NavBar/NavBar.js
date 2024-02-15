@@ -1,6 +1,6 @@
 import React from 'react';
 import './NavBar.css';
-import logo from '../images/JMD Alloys.jpeg';
+import logo from '../images/JMD_Alloys_logo.jpg';
 
 const NavBar = () => {
   return (

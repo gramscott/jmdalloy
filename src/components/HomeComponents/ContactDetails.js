@@ -1,6 +1,7 @@
 import React from 'react'
 import './ContactDetails.css'
 import { Telephone, Envelope, Instagram, Facebook } from 'react-bootstrap-icons'
+import HomeVideo from './HomeVideo'
 
 const ContactDetails = () => {
   return (

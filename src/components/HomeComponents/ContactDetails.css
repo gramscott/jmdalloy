@@ -4,6 +4,7 @@
     font-family: 'Arial', sans-serif;
     margin-bottom: 30px;
     padding-left: 50px;
+    flex: 1;
 }
 
 .contacts { 
@@ -74,5 +75,4 @@
     border: 1px solid white;
     border-radius: 5px;
   }
-  
   

@@ -8,7 +8,7 @@ const HomeContainer = () => {
   return (
 
     <div>
-    <HomeVideo/>
+      <HomeVideo/>
        <About/>
        <ContactDetails/>
     </div>

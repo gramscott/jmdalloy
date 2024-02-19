@@ -1,5 +1,5 @@
 import React from 'react'
-import myVideo from '../../images/alloy_video.mp4'
+import myVideo from '../../images/black_and_white_alloy.mp4'
 import './HomeVideo.css'
 
 const HomeVideo = () => {

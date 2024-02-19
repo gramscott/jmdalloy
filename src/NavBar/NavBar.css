@@ -7,20 +7,64 @@
     margin-bottom: 30px;
     padding-top: 30px;
   }
+  .burger {
+    display: none;
+    cursor: pointer;
+    background-color: orangered;
+    font-size: 24px; 
+    border-radius: 5px;
 
+  }
   
-  nav .nav-item .nav-link {
-    color: white;
-    font-size: 18px;
-    margin: 0 15px;
-    padding-left: 30px;
-    font-family: 'Arial', sans-serif;
-    transition: color 0.3s ease;
+  @media (max-width: 768px) {
+    .burger {
+      display: block;
+    }
+  
+    .nav-menu,
+    .nav-menu-expanded {
+      display: none;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .nav-menu-expanded {
+      display: block;
+    }
+  
+    .nav {
+      flex-direction: column;
+    }
+
+    nav .nav-item .nav-link:hover {
+      color: orangered; 
+    }
+  
+    .nav-item {
+      margin: 10px 0; 
+
+    }
+  
+    .logo {
+      width: 200px; 
+      height: 175px;
+    }
   }
 
-  nav .nav-item .nav-link:hover {
-    color: orangered; 
-  }
+
+nav .nav-item .nav-link {
+  color: white;
+  font-size: 18px;
+  margin: 0 15px;
+  padding-left: 30px;
+  font-family: 'Arial', sans-serif;
+  transition: color 0.3s ease;
+  padding-bottom: 20px;
+}
+
+nav .nav-item .nav-link:hover {
+  color: orangered; 
+}
 
   .logo {
     width: 400px;
@@ -31,7 +75,7 @@
   
   .logo:hover {
     transform: scale(1.1);
-    border: 5px solid #color; /* Replace #color with your desired highlight color */
+    border: 5px solid #orangered; 
   }
   
   

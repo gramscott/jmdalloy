@@ -1,16 +1,28 @@
-import React from 'react';
+import React, { useState} from 'react';
 import './NavBar.css';
 import logo from '../images/JMD_Alloys_logo.jpg';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 const NavBar = () => {
+
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
+
   return (
     <nav className="navbar-expand-lg navy">
       <div className="logo-container">
-        <a href="/" className="navbar-brand logo">
+        <a className="navbar-brand logo">
           <img src={logo} alt="logo" className="logo active"/>
         </a>
       </div>
-      <ul className="nav">
+
+      <button className='burger' onClick={() => setIsNavExpanded(!isNavExpanded)}>
+        {isNavExpanded ? <FaTimes /> : <FaBars />}
+      </button>
+      <div className={`nav-menu ${isNavExpanded ? 'nav-menu-expanded' : ''}`}>
+      <ul className="nav justify-content-center">
+      <li className="nav-item">
+      <a href="/" className="nav-link active" href="/">Home</a>
+      </li>
       <li className="nav-item">
       <a className="nav-link active" href="/services">Services</a>
       </li>
@@ -27,7 +39,7 @@ const NavBar = () => {
           <a className="nav-link active" href="/terms-conditions">Terms & Conditions</a>
         </li>
       </ul>
-
+      </div>
       </nav>
 
   );

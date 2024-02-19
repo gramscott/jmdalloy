@@ -1,21 +1,18 @@
 import './App.css';
+import React from 'react';
+import { Element } from 'react-scroll'; 
 import HomeContainer from './containers/HomeContainer';
 import NavBar from './NavBar/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter,  Routes, Route } from 'react-router-dom';
 import ServicesContainer from './containers/ServicesContainer';
 
 
 function App() {
   return (
     <div className="App">
-    <BrowserRouter>
      <NavBar/>
-     <Routes>
-     <Route path="" element={<HomeContainer/>}/>
-     <Route path="/services" element={<ServicesContainer/>}/>
-     </Routes>
-    </BrowserRouter>
+     <Element name=""><HomeContainer/></Element>
+     <Element name="services"><ServicesContainer/></Element>
     </div>
   );
 }

@@ -1,26 +1,32 @@
 import React from 'react'
+import AlloyWheelRef from './AlloyWheelRef'
+import BrakeCaliperResprays from './BrakeCaliperResprays'
+import ColourChanges from './ColourChanges'
+import CustomColours from './CustomColours'
+import DiamondCutting from './DiamondCutting'
+import './ServiceList.css'
 
 const ServiceList = () => {
 
   return (
 
-    <div>
-    <h1>
-       1
-    </h1>
-    <h2>
-         2
-    </h2>
-    <h3>
-         3
-    </h3>
-    <h4>
-         4
-    </h4>
-    <h5>
-         5
-    </h5>
-    </div>
+     <div className='service-list'>
+     <div className='service-list-item'>
+     <AlloyWheelRef/>
+     </div>
+     <div className='service-list-item'>
+     <BrakeCaliperResprays/>
+     </div>
+     <div className='service-list-item'>
+     <ColourChanges/>
+     </div>
+     <div className='service-list-item'>
+     <CustomColours/>
+     </div>
+     <div className='service-list-item'>
+     <DiamondCutting/>
+     </div>
+     </div>
 
   )
 }

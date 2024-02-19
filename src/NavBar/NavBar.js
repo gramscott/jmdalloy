@@ -8,7 +8,7 @@ const NavBar = () => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
 
   return (
-    <nav className="navbar-expand-lg navy">
+    <nav className="navbar-expand-lg">
     <button className='burger' onClick={() => setIsNavExpanded(!isNavExpanded)}>
         {isNavExpanded ? <FaTimes /> : <FaBars />}
       </button>

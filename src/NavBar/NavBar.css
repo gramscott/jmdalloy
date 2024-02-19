@@ -51,6 +51,13 @@
     }
   }
 
+  nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #000;
+  }
 
 nav .nav-item .nav-link {
   color: white;
@@ -75,7 +82,4 @@ nav .nav-item .nav-link:hover {
   
   .logo:hover {
     transform: scale(1.1);
-    border: 5px solid #orangered; 
   }
-  
-  

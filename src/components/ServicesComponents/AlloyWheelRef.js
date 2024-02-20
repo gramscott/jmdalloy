@@ -1,7 +1,10 @@
-import React, { } from 'react'
+import React from 'react'
 import alloyPlaceholder from '../../images/alloy_placeholder.jpeg'
 
 const AlloyWheelRef = () => {
+
+
+
   return (
 
     <div className='service-ad'>

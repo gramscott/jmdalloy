@@ -76,3 +76,11 @@ button {
 button:hover {
     color: white;
 }
+
+h3 {
+    padding-top: 10px;
+    margin-bottom: 20px;
+    color: white;
+    font-style: italic;
+    font-family: 'Arial', sans-serif;
+}

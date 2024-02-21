@@ -10,24 +10,22 @@ const QuoteForm = () => {
       <Form action='https://api.web3forms.com/submit' method="POST" id="form" className='form-layout'>
         <input type="hidden" name="apikey" value="099dd778-2dab-49cf-b4cc-9784c27b5566"/>
         <input type="hidden" name="subject" value="New quote request!"/>
+        <input type="hidden" name="redirect" value="https://jmdalloyrepairs.com/thank-you"/>
 
         <div className="form-group-container">
           <div className="form-group-left">
-            <Form.Group controlId="formName">
+            <Form.Group controlId="formName" className='form-item'>
               <Form.Control type="text" placeholder="Name" name="name" required/>
             </Form.Group>
+           
 
-            <Form.Group controlId="formEmail">
-              <Form.Control type="email" placeholder="Email" name="email" required/>
+            <Form.Group controlId="formPhone" className='form-item'>
+              <Form.Control type="tel" placeholder="Contact Number" name="phone" required/>
             </Form.Group>
 
-            <Form.Group controlId="formPhone">
-              <Form.Control type="tel" placeholder="Phone" name="phone" required/>
-            </Form.Group>
-
-            <Form.Group controlId="formServiceRequired">
+            <Form.Group controlId="formServiceRequired" className='form-item'>
               <Form.Control as="select" name="service" required>
-                <option>Select Option</option>
+                <option>Service Required</option>
                 <option>Alloy Wheel Refurbishment</option>
                 <option>Brake Caliper Resprays</option>
                 <option>Colour Changes</option>
@@ -35,26 +33,39 @@ const QuoteForm = () => {
                 <option>Diamond Cutting</option>
               </Form.Control>
             </Form.Group>
-          </div>
 
-          <div className="form-group-right">
-            <Form.Group controlId="formMake/ModelOfCar">
-              <Form.Control type="text" placeholder="Make/Model of Car" name="car" required/>
-            </Form.Group>
-
-            <Form.Group controlId="formNumberOfWheels">
-              <Form.Control type="number" placeholder="Number of Wheels" name="wheels" required/>
-            </Form.Group>
-
-            <Form.Group controlId="formColour">
+            <Form.Group controlId="formColour" className='form-item'>
               <Form.Control type="text" placeholder="Colour Requirements" name="colour" required/>
             </Form.Group>
 
-            <Form.Group controlId="formChooseAFile">
-              <Form.Control type="file" name="file" required/>
+          </div>
+
+          <div className="form-group-right">
+          <Form.Group controlId="formEmail" className='form-item'>
+              <Form.Control type="email" placeholder="Email Address" name="email" required/>
             </Form.Group>
+            <Form.Group controlId="formMake/ModelOfCar" className='form-item'>
+              <Form.Control type="text" placeholder="Make/Model of Car" name="car" required/>
+            </Form.Group>
+
+            <Form.Group controlId="formNumberOfWheels" className='form-item'>
+              <Form.Control type="number" placeholder="No. of Wheels" name="wheels" required/>
+            </Form.Group>
+
+            <Form.Group controlId="formMessage" className='form-item'>
+              <Form.Control as="textarea" rows={3} placeholder="Additional Notes?" name="message"/>
+            </Form.Group>
+
           </div>
         </div>
+
+        <p>
+        <b>Upload images of your wheels (Maximum 8 images). Max image size 4mb. Allowed file types: .jpeg/.gif/.png/.pdf </b>
+        </p>
+
+        <Form.Group controlId="formChooseAFile" className='form-item file'>
+              <Form.Control type="file" name="file" required/>
+            </Form.Group>
 
         <Button  className='quote-button' variant="primary" type="submit">
           Submit Enquiry

@@ -7,7 +7,7 @@ const BrakeCaliperResprays = () => {
     <img src={caliperRespraysPlaceholder} alt='Brake Caliper Resprays'
     style = {{width: '70%', height: 'auto', borderRadius: '10px'}}
     />
-    <h3>BrakeCaliper Resprays</h3>
+    <h3>Brake Caliper Resprays</h3>
     <button>Find out more</button>
     </div>
   )

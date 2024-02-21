@@ -1,0 +1,50 @@
+.quote-container {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px;
+    display: inline-flex;
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+  }
+  
+  .form-layout {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  
+  .form-group-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .form-group-left, .form-group-right {
+    display: flex;
+    flex-direction: column;
+    width: 48%; 
+  }
+
+
+  .quote-button {
+    background-color: orangered;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+    .quote-button:hover {
+        color: white;
+        background-color: orangered;
+    }

@@ -21,15 +21,18 @@ const NavBar = () => {
       </div>
       
       <div className={`nav-menu ${isNavExpanded ? 'nav-menu-expanded' : ''}`}>
+
         <ul className="nav justify-content-center">
         <li className="nav-item">
-          <ScrollLink to="/" spy={true} smooth={true} duration={500} className="nav-link active">Home</ScrollLink>
+          <ScrollLink to="home" spy={true} smooth={true} duration={500} className="nav-link active">Home</ScrollLink>
         </li>
+
         <li className="nav-item">
         <ScrollLink to="services"  smooth={true} duration={500} className="nav-link active" >Services</ScrollLink>
         </li>
+
         <li className="nav-item">
-        <a className='nav-link active' href='/get-a-quote'>Get a Quote</a>
+        <ScrollLink to='quote' smooth={true} duration={500} className='nav-link active'>Get a Quote</ScrollLink>
         </li>
         <li className="nav-item">
           <a className="nav-link active" href="/about-josh">About Josh</a>

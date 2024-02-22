@@ -2,15 +2,12 @@ import React from 'react';
 import { Button, Form } from 'react-bootstrap';
 import './QuoteForm.css';
 
-const QuoteForm = () => {
+const QuoteForm = ({ onSubmit }) => {
   return (
     <div className='quote-container'>
       <h2>Get Your Free Quote Today!</h2>
-
-      <Form action='https://api.web3forms.com/submit' method="POST" id="form" className='form-layout'>
-        <input type="hidden" name="apikey" value="099dd778-2dab-49cf-b4cc-9784c27b5566"/>
-        <input type="hidden" name="subject" value="New quote request!"/>
-        <input type="hidden" name="redirect" value="http://localhost:3000/thank-you"/>
+      
+      <Form id="form" className='form-layout' onSubmit={onSubmit}>
 
 
         <div className="form-group-container">

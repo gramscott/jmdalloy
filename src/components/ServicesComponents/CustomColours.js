@@ -9,7 +9,7 @@ const CustomColours = () => {
 
     />
 
-    <h3>Custom Paint</h3>
+    <h3>Custom Colours</h3>
     <button>Find out more</button>
     </div>
   )

@@ -7,7 +7,7 @@ import NavBar from './NavBar/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ServicesContainer from './containers/ServicesContainer';
 import QuoteContainer from './containers/QuoteContainer';
-import ThankYou from '../components/QuoteComponents/ThankYou';
+import ThankYou from './components/QuoteComponents/ThankYou';
 
 
 

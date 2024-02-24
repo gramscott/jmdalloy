@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import QuoteForm from '../components/QuoteComponents/QuoteForm';
+import { Element } from 'react-scroll';
 
 const QuoteContainer = () => {
   const navigate = useNavigate();
@@ -18,7 +19,7 @@ const QuoteContainer = () => {
       });
 
       if (response.ok) {
-        navigate.push('/thank-you');
+        navigate('/thank-you');
       } else {
         console.error('Server responded with an error');
       }
@@ -28,9 +29,9 @@ const QuoteContainer = () => {
   };
 
   return (
-    <div>
+    <Element name='quote'>
       <QuoteForm onSubmit={handleSubmit}/>
-    </div>
+    </Element>
   );
 }
 

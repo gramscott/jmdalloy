@@ -1,7 +1,6 @@
 import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Element } from 'react-scroll'; 
 import HomeContainer from './containers/HomeContainer';
 import NavBar from './NavBar/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -17,12 +16,10 @@ function App() {
     <div className="App">
      <NavBar/>
      <Routes>
-     <Route path="/" exact>  
-     <Element name="home"><HomeContainer/></Element>
-     <Element name="services"><ServicesContainer/></Element>
-     <Element name="quote"><QuoteContainer/></Element>
-     </Route>
-     <Route name="thank-you"><ThankYou/></Route>
+     <Route path="/" element={<HomeContainer />} />
+          <Route path="/services" element={<ServicesContainer />} />
+          <Route path="/quote" element={<QuoteContainer />} />
+          <Route path="/thank-you" element={<ThankYou />} />
      </Routes>
     </div>
     </Router>

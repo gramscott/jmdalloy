@@ -1,13 +1,14 @@
 import React from 'react'
 import ServiceList from '../components/ServicesComponents/ServiceList'
+import { Element } from 'react-scroll'
 
 const ServicesContainer = () => {
 
   return (
 
-    <div>
+    <Element name='services'>
     <ServiceList/>
-    </div>
+    </Element>
 
   )
 }

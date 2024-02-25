@@ -1,12 +1,10 @@
 import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import HomeContainer from './containers/HomeContainer';
 import NavBar from './NavBar/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ServicesContainer from './containers/ServicesContainer';
-import QuoteContainer from './containers/QuoteContainer';
 import ThankYou from './components/QuoteComponents/ThankYou';
+import MainLandingPage from './containers/MainLandingPage';
 
 
 
@@ -16,10 +14,8 @@ function App() {
     <div className="App">
      <NavBar/>
      <Routes>
-     <Route path="/" element={<HomeContainer />} />
-          <Route path="/services" element={<ServicesContainer />} />
-          <Route path="/quote" element={<QuoteContainer />} />
-          <Route path="/thank-you" element={<ThankYou />} />
+        <Route path="/" element={<MainLandingPage />} />
+        <Route path="/thank-you" element={<ThankYou />} />
      </Routes>
     </div>
     </Router>

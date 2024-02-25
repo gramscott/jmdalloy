@@ -1,6 +1,6 @@
 import React from 'react'
 import ServiceList from '../components/ServicesComponents/ServiceList'
-import { Element } from 'react-scroll'
+import { Element } from 'react-scroll';
 
 const ServicesContainer = () => {
 

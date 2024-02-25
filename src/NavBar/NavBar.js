@@ -2,7 +2,7 @@ import React, { useState} from 'react';
 import './NavBar.css';
 import logo from '../images/JMD_Alloys_logo.jpg';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { Link as ScrollLink } from 'react-scroll';
+import { Link} from 'react-scroll';
 
 const NavBar = () => {
 
@@ -24,15 +24,15 @@ const NavBar = () => {
 
         <ul className="nav justify-content-center">
         <li className="nav-item">
-          <ScrollLink to="home" spy={true} smooth={true} duration={500} className="nav-link active">Home</ScrollLink>
+        <Link className='nav-link active' to="home" spy={true} smooth={true} offset={-70} duration={500}>Home</Link>
         </li>
 
         <li className="nav-item">
-        <ScrollLink to="services"  smooth={true} duration={500} className="nav-link active" >Services</ScrollLink>
+        <Link to="services"  className='nav-link active' spy={true} smooth={true} offset={-70} duration={500}>Services</Link>
         </li>
 
         <li className="nav-item">
-        <ScrollLink to='quote' smooth={true} duration={500} className='nav-link active'>Get a Quote</ScrollLink>
+        <Link  to="quote" className='nav-link active' spy={true} smooth={true} offset={-70} duration={500}>Quote</Link>
         </li>
         <li className="nav-item">
           <a className="nav-link active" href="/about-josh">About Josh</a>

@@ -19,7 +19,6 @@ const NavBar = () => {
           <img src={logo} alt="logo" className="logo active"/>
         </a>
       </div>
-      
       <div className={`nav-menu ${isNavExpanded ? 'nav-menu-expanded' : ''}`}>
 
         <ul className="nav justify-content-center">

@@ -1,13 +1,11 @@
 import React from 'react'
-import caliperRespraysPlaceholder from '../../images/caliperpainting_placeholder.jpeg'
+import brakeCaliperMain from '../../images/brake_caliper_main_pic.jpg'
 
 const BrakeCaliperResprays = () => {
   return (
     <div className='service-ad'>
-    <img src={caliperRespraysPlaceholder} alt='Brake Caliper Resprays'
-    style = {{width: '70%', height: 'auto', borderRadius: '10px'}}
-    />
     <h3>Brake Caliper Resprays</h3>
+    <img src={brakeCaliperMain} alt='Brake Caliper Resprays'/>
     <button>Find out more</button>
     </div>
   )

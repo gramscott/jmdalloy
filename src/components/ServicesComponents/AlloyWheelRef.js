@@ -1,5 +1,5 @@
 import React from 'react'
-import alloyPlaceholder from '../../images/alloy_placeholder.jpeg'
+import alloyWheelMainPic from '../../images/alloy_wheel_ref_main_pic.JPG'
 
 const AlloyWheelRef = () => {
 
@@ -8,7 +8,7 @@ const AlloyWheelRef = () => {
   return (
 
     <div className='service-ad'>
-    <img src={alloyPlaceholder} alt='alloy wheel' />
+    <img src={alloyWheelMainPic} alt='alloy wheel' />
     <h3>Alloy Wheel Refurbishment</h3>
 
     <button>Find out more</button>

@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import QuoteForm from '../components/QuoteComponents/QuoteForm';
 import { Element } from 'react-scroll';
 
+
 const QuoteContainer = () => {
   const navigate = useNavigate();
 
@@ -18,14 +19,17 @@ const QuoteContainer = () => {
         body: formData,
       });
 
+      const responseData = await response.json();
+
       if (response.ok) {
         navigate('/thank-you');
       } else {
-        console.error('Server responded with an error');
+        console.error('Server responded with an error', responseData.message);
       }
     } catch (error) {
       console.error('Form submission failed', error);
     }
+
   };
 
   return (

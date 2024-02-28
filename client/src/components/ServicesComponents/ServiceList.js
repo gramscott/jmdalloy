@@ -1,41 +1,19 @@
-import React from 'react'
-import AlloyWheelRef from './AlloyWheelRef'
-import BrakeCaliperResprays from './BrakeCaliperResprays'
-import ColourChanges from './ColourChanges'
-import CustomColours from './CustomColours'
-import DiamondCutting from './DiamondCutting'
+import ServiceItem from './ServiceItem'
 import './ServiceList.css'
 
-const ServiceList = () => {
+const ServiceList = ( {serviceData }) => {
 
   return (
+
     <div className='service-container'>
     <h2>Our Services</h2>
-     <div className='service-list'>
-     <div className='service-list-item'>
-     <AlloyWheelRef/>
-     </div>
-     <div className='service-list-item'>
-      <BrakeCaliperResprays/>
-      </div>
-     {/* <div className='service-list-item'>
-     <BrakeCaliperResprays/>
-     </div> */}
-     {/* 
-     <div className='service-list-item'>
-     <ColourChanges/>
-     </div>
-     <div className='service-list-item'>
-     <CustomColours/>
-     </div>
+    <div className='service-list'>
+    {serviceData.map(service => (
+      <ServiceItem key={service.id} service={service} />
+    ))}
+    </div>
+    </div>
+    );
+};
 
-     <div className='service-list-item'>
-     <DiamondCutting/> */}
-     {/* </div> */}
-     </div>
-     </div>
-
-  )
-}
-
-export default ServiceList
+export default ServiceList;

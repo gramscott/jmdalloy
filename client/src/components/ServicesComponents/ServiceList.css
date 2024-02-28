@@ -17,6 +17,13 @@ img {
     border-radius: 5px; 
 }
 
+@media screen and (min-width: 768px)
+{
+    .service-list-item {
+        flex: 0 0 30%;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .service-ad img {
         max-width: 70%;
@@ -29,19 +36,19 @@ img {
     border: 1px solid white;
     border-radius: 50px;
     margin: 40px auto; 
-    display: block; 
     max-width: 90%;
 }
 
 .service-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: space-between;
 }
 
 
 .service-list-item {
-    padding: 20px;
-    border-radius: 5px;
+    flex: 0 0 30%;
+    margin-bottom: 20px;
+    padding: 30px;
 }
 
 .service-list-item:hover {

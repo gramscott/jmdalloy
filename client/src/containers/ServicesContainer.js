@@ -11,6 +11,14 @@ const ServicesContainer = () => {
   const serviceData = [
 
     {
+      id: 4,
+      name: 'Alloy Wheel Refurbishment',
+      image: alloyWheelMainPic,
+      alt: 'Alloy Wheel Refurbishment',
+      path: '/alloy-wheel-refurbishment'
+    },
+
+    {
       id: 1,
       name: 'Brake Caliper Resprays',
       image: brakeCaliperMain,
@@ -27,13 +35,8 @@ const ServicesContainer = () => {
       name: 'Diamond Cutting',
       image: diamondCuttingMainPic,
       alt: 'Diamond Cutting'
-    },
-    {
-      id: 4,
-      name: 'Alloy Wheel Refurbishment',
-      image: alloyWheelMainPic,
-      alt: 'Alloy Wheel Refurbishment'
     }
+    
   ];
 
 

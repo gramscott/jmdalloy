@@ -11,7 +11,7 @@ const AlloyWheelRef = () => {
     <img src={alloyWheelMainPic} alt='alloy wheel' />
     <h3>Alloy Wheel Refurbishment</h3>
 
-    <button>Find out more</button>
+    <button className='find-out-more'>Find out more</button>
     </div>
   )
 }

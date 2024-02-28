@@ -21,19 +21,19 @@ img {
 @media screen and (min-width: 768px)
 {
     .service-list-item {
-        flex: 0 0 30%;
+        flex: 0 0 23%;
     }
+  
 }
 
 @media screen and (min-width: 768px) {
     .service-ad img {
-        max-width: 70%;
         height: 300px;
     }
 }
 
 .service-container {
-    padding: 20px;
+    padding: 30px;
     border: 1px solid white;
     border-radius: 50px;
     margin: 40px auto; 
@@ -41,7 +41,7 @@ img {
 }
 
 .service-list {
-    display: flex;
+    display:flex;
     flex-wrap: space-between;
 }
 

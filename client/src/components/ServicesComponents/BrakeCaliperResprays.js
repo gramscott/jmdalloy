@@ -6,7 +6,7 @@ const BrakeCaliperResprays = () => {
     <div className='service-ad'>
     <h3>Brake Caliper Resprays</h3>
     <img src={brakeCaliperMain} alt='Brake Caliper Resprays'/>
-    <button>Find out more</button>
+    <button className='find-out-more'>Find out more</button>
     </div>
   )
 }

@@ -14,12 +14,14 @@ const ServiceList = () => {
      <div className='service-list'>
      <div className='service-list-item'>
      <AlloyWheelRef/>
-
-     
      </div>
-     {/* <div className='service-list-item brake-calliper'>
+     <div className='service-list-item'>
+      <BrakeCaliperResprays/>
+      </div>
+     {/* <div className='service-list-item'>
      <BrakeCaliperResprays/>
-     </div>
+     </div> */}
+     {/* 
      <div className='service-list-item'>
      <ColourChanges/>
      </div>

@@ -1,0 +1,27 @@
+.container {
+    padding: 20px;
+    margin:auto;
+    max-width: 800px;
+}
+
+h2, h3 {
+    color: white;
+}
+
+p {
+    color: white;
+    text-align: center;
+}
+
+li {
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+.benefits:before {
+    content: "✓ ";
+    color: orangered;
+}

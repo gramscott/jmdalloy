@@ -3,17 +3,20 @@ import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './AlloyWheelRefurbishment.css'
+import AlloyWheelRefurbishment1 from '../../images/alloy_wheel_ref_main_pic.JPG'
 
 const AlloyWheelRefurbishment = () => {
 
   const slideRef = useRef(null);
 
   const settings = {
-    dots: true,
-    infinite: true,
+    dots: false,
+    infinite: false,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1, 
+    nextArrow: <div className='custom-arrow'>Next</div>,
+    prevArrow: <div className='custom-arrow'>Prev</div>
   };
 
   const goToPrev = () => {
@@ -28,8 +31,11 @@ const AlloyWheelRefurbishment = () => {
 
     <div>
     <Slider ref={slideRef} {...settings}>
+      <div className='next-page-pics'>
+        <img src={AlloyWheelRefurbishment1} alt='Alloy Wheel Refurbishment' />
+      </div>
     </Slider> 
-    <div className='container mt-5'></div>
+    <div className='container mt-5'>
     <h2>Alloy Wheel Refurbishment</h2> 
     <p>Alloy wheels can become damaged and weathered over time. Refurbishment can bring them back to new-like condition, enhancing not only the appearance but also the value of your car.</p>
 
@@ -47,6 +53,7 @@ const AlloyWheelRefurbishment = () => {
       <li>Lacquer is applied to give a gloss, satin or Matt finish then baked and cured</li>
       <li>Tyres are fitted back on the wheels then fully balanced and fitted back on the car</li>
       </ol>
+      </div>
       </div>
 
   )

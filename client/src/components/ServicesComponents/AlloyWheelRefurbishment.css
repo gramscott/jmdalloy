@@ -1,27 +1,41 @@
 .container {
     padding: 20px;
     margin:auto;
-    max-width: 800px;
+    border: 1px solid white;
+    border-radius: 10px;
+
 }
 
 h2, h3 {
     color: white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
-p {
+p, li {
     color: white;
     text-align: center;
+    text-align: center;
+    line-height: 1.6;
 }
 
-li {
-    color: white;
-}
 
 ul {
     list-style: none;
+    padding: 0;
 }
 
 .benefits:before {
     content: "✓ ";
     color: orangered;
 }
+
+.next-page-pics img {
+    width: 30%;
+    height: 50%;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} 

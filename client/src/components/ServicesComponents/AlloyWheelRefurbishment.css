@@ -1,35 +1,45 @@
-.container {
-    padding: 20px;
+.alloy-container {
+    padding: 40px;
     margin:auto;
     border: 1px solid white;
     border-radius: 10px;
-    max-width: 60%
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+    color: white;
 }
 
-h2, h3 {
+h3 {
+    margin-bottom: 20px; 
+    font-size: 1.75rem; 
     color: white;
-    text-align: center;
-    margin-bottom: 25px;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
 }
 
 .alloy-description {
-    color: white;
     text-align: justify;
-    line-height: 1.6;
-    font-size: large;
-    font-style: oblique;
-
-    
+    text-justify: inter-word;
+    line-height: 1.8; 
+    font-size: 100%;
 }
 
 
-ul, ol {
+.benefits, ol {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.8; 
+    font-size: 1rem;
+}
+
+
+ul {
     list-style: none;
     padding: 0;
 }
 
-.benefits:before, ol li:before{
+.benefits:before {
     content: "✓ ";
     color: orangered;
     margin-right: 5px;
@@ -38,9 +48,7 @@ ul, ol {
 .next-page-pics img {
     width: 30%;
     height: auto;
-    border-radius: 10px;
-    justify-content: center;
-    align-items: center;
+    border-radius: 10px; 
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -68,7 +76,7 @@ ul, ol {
     font-size: 60px;
 }
 
-.service-description {
+.service-description  {
     padding: 20px;
     border: 1px solid white;
     border-radius: 10px;
@@ -80,4 +88,13 @@ ul, ol {
     .service-description, .next-page-pics img {
       width: 100%; 
     }
+  }
+
+  .benefits {
+        margin-bottom: 20px;
+        color: white;
+  }
+
+  .process {
+        margin-bottom: 20px;
   }

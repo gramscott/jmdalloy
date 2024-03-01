@@ -15,16 +15,8 @@ const AlloyWheelRefurbishment = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1, 
-    nextArrow: <div className='custom-arrow'>Next</div>,
-    prevArrow: <div className='custom-arrow'>Prev</div>
-  };
-
-  const goToPrev = () => {
-    slideRef.current.slickPrev();
-  };
-
-  const goToNext = () => {
-    slideRef.current.slickNext();
+    nextArrow: <div></div>,
+    prevArrow: <div></div>
   };
 
   return (
@@ -35,16 +27,26 @@ const AlloyWheelRefurbishment = () => {
         <img src={AlloyWheelRefurbishment1} alt='Alloy Wheel Refurbishment' />
       </div>
     </Slider> 
-    <div className='container mt-5'>
-    <h2>Alloy Wheel Refurbishment</h2> 
-    <p>Alloy wheels can become damaged and weathered over time. Refurbishment can bring them back to new-like condition, enhancing not only the appearance but also the value of your car.</p>
 
+    <div className='container mt-5'>
+    <div className='service-description col-12'>
+    <h2>Alloy Wheel Refurbishment</h2> 
+    <p className='alloy-description'>Alloy wheels can become damaged and weathered over time. Refurbishment can bring them back to<strong>new-like condition</strong>, <strong>enhancing not only the appearance</strong> but also the <strong>value of your car</strong>.</p>
+    </div>
+{/* 
+    <div className='row service-description'>
+    <div className='col-md-6'>
     <h3>Benefits</h3>
     <ul>
       <li className='benefits'>Improve your cars appearance and value</li>
       <li className='benefits'>Prevent heavy lease return penalties</li>
     </ul>
+    </div>
+    </div>
+    
 
+    <div className='row service-description'>
+    <div className='col-md-6'>
     <h3>Process</h3>
     <ol>
       <li>Tyres and wheel weights are removed</li>
@@ -53,7 +55,9 @@ const AlloyWheelRefurbishment = () => {
       <li>Lacquer is applied to give a gloss, satin or Matt finish then baked and cured</li>
       <li>Tyres are fitted back on the wheels then fully balanced and fitted back on the car</li>
       </ol>
+      </div> */}
       </div>
+      {/* </div> */}
       </div>
 
   )

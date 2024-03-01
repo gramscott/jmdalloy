@@ -39,3 +39,18 @@ ul {
     margin-left: auto;
     margin-right: auto;
 } 
+
+
+.slick-prev {
+    left: 25px;
+}
+
+.slick-next {
+    right: 25px;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 60px;
+}
+

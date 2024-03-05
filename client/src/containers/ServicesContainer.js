@@ -1,7 +1,7 @@
 import React from 'react'
 import ServiceList from '../components/ServicesComponents/ServiceList'
 import { Element } from 'react-scroll';
-import alloyWheelMainPic from '../images/alloy_wheel_ref_main_pic.JPG'
+import alloyWheelMainPic from '../images/alloy_wheel_ref_pic.JPG'
 import diamondCuttingMainPic from '../images/diamond_cutting_main_pic.jpg'
 import colourChangesMainPic from '../images/colour_change_main_pic.jpg'
 import brakeCaliperMain from '../images/brake_caliper_main_pic.jpg'
@@ -22,13 +22,15 @@ const ServicesContainer = () => {
       id: 1,
       name: 'Brake Caliper Resprays',
       image: brakeCaliperMain,
-      alt: 'Brake Caliper Resprays'
+      alt: 'Brake Caliper Resprays',
+      path: '/brake-caliper-resprays'
     },
     {
       id: 2,
       name: 'Colour Changes',
       image: colourChangesMainPic,
-      alt: 'Colour Changes'
+      alt: 'Colour Changes',
+      path: '/colour-changes'
     },
     {
       id: 3,

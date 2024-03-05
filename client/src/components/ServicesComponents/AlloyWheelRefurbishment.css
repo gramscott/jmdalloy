@@ -50,13 +50,32 @@ ul {
     height: auto;
     border-radius: 10px; 
     display: block;
+    margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
+
 } 
 
-.slick-prev {
-    left: 25px;
+.home-button {
+    margin: 10px;
+    background-color: orangered;
+    border: 2px solid orangered;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px;
+    font-style: normal;
+    font-weight: bold;
+    width: 8%;
+    color: black;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+
+.home-button:hover{
+    color: white;
+}
+
 
 .slick-next {
     right: 25px;
@@ -95,6 +114,27 @@ ul {
         color: white;
   }
 
-  .process {
-        margin-bottom: 20px;
-  }
+  .process-list {
+    counter-reset: process-counter; 
+    list-style: none;
+    padding-left: 0;
+}
+
+.process-list li {
+    counter-increment: process-counter; 
+    position: relative; 
+    padding-left: 25px; 
+}
+
+.process-list li:before {
+    content: counter(process-counter) ". "; 
+    position: absolute;
+    left: 0;
+    color: orangered; 
+    font-weight: bold; 
+}
+
+.process {
+    margin-bottom: 20px;
+    color: white;
+}

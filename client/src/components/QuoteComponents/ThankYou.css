@@ -28,9 +28,18 @@
 
 .thank-you-container button {
     margin: 10px;
+    background-color: orangered;
     border: 2px solid orangered;
     border-radius: 5px;
     text-decoration: none;
     padding: 10px;
+    font-style: normal;
+    font-weight: bold;
     color: black;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.thank-you-container button:hover {
+    color: white;
 }

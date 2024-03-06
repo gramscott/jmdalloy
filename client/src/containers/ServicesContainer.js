@@ -33,11 +33,20 @@ const ServicesContainer = () => {
       path: '/colour-changes'
     },
     {
+      id: 5,
+      name: 'Custom Colours',
+      // image: diamondCuttingMainPic,
+      alt: 'Custom Colours',
+      path: '/custom-colours'
+    },
+    {
       id: 3,
       name: 'Diamond Cutting',
       image: diamondCuttingMainPic,
-      alt: 'Diamond Cutting'
+      alt: 'Diamond Cutting',
+      path: '/diamond-cutting'
     }
+  
     
   ];
 

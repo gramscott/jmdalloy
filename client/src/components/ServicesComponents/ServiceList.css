@@ -18,19 +18,25 @@ img {
     border-radius: 5px; 
 }
 
-@media screen and (min-width: 768px)
-{
+@media screen and (max-width: 767px) {
     .service-list-item {
-        flex: 0 0 23%;
+      flex: 0 0 100%; 
+      margin-bottom: 20px;
     }
+  }
   
-}
-
-@media screen and (min-width: 768px) {
-    .service-ad img {
-        height: 300px;
+  @media screen and (min-width: 768px) {
+    .service-list-item {
+      flex: 0 0 48%; 
     }
-}
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .service-list-item {
+      flex: 0 0 23%; 
+    }
+  }
+  
 
 .service-container {
     padding: 30px;
@@ -43,7 +49,8 @@ img {
 
 .service-list {
     display:flex;
-    flex-wrap: space-between;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 

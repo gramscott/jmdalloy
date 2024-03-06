@@ -9,7 +9,7 @@ const About = () => {
         Based in Lanark, <strong>JMD Alloys</strong> has many years of experience in the industry. We are known for being professional, informative, and well-priced.
       </p>
       <p>
-        Our services include <strong>alloy wheel refurbishments, diamond cutting, custom colours, and brake caliper resprays.</strong>
+        Our services include <strong>alloy wheel refurbishments, brake caliper resprays, colour changes, custom colours and diamond cutting.</strong>
       </p>
       <p>
         Interested in our services? <strong>Give Josh a call today</strong> using the contact information below.

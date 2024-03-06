@@ -12,10 +12,9 @@ const QuoteForm = ({ onSubmit }) => {
         <input type="hidden" name="redirect" value="http://localhost:3000/thank-you"/>
         <input type="hidden" name="subject" value="New Quote Submission"/>
 
- 
 
-        <div className="form-group-container">
-          <div className="form-group-left">
+        <div className="form-group-container row">
+          <div className="col-lg-6">
             <Form.Group controlId="formName" className='form-item'>
               <Form.Control type="text" placeholder="Name" name="name" required/>
             </Form.Group>
@@ -42,7 +41,7 @@ const QuoteForm = ({ onSubmit }) => {
 
           </div>
 
-          <div className="form-group-right">
+          <div className="col-lg-6 row">
           <Form.Group controlId="formEmail" className='form-item'>
               <Form.Control type="email" placeholder="Email Address" name="email" required/>
             </Form.Group>

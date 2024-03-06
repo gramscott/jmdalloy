@@ -1,3 +1,5 @@
+
+/* The full container */
 .quote-container {
     border: 1px solid #e0e0e0;
     border-radius: 50px;
@@ -7,11 +9,9 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    max-width: 80%; 
-    padding: 300px;
-    height: 650px;
-
-
+    max-width: 90%;
+    padding: 20px;
+    min-height: 650px;
   }
   
   h2 {
@@ -36,12 +36,11 @@
     gap: 20px;
     padding: 20px;
   }
-  
-  .form-group-left, .form-group-right {
-    flex: 1;
-    padding-bottom: 10px;
+
+  .form-item, .quote-button {
+    width: 100%;
+    margin: 10px;
   }
-  
   
   .quote-button {
     background-color: orangered;
@@ -80,4 +79,27 @@
         color: white;
         text-align: left;
 
+    }
+
+    @media (max-width: 991px) {
+        .quote-container {
+          max-width: 95%;
+            padding: 20px;
+        }
+        .file, .form-item, .quote-button {
+            width: 100%;
+        }
+  
+    }
+
+    @media (max-width: 768px) {
+       .form-group-container {
+           flex-direction: column;
+       }
+
+        .file {
+            width: 80%;
+            margin: auto;
+        }
+      
     }

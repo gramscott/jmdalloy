@@ -9,10 +9,11 @@ const NavBar = () => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
 
   return (
+
     <nav className="navbar-expand-lg">
-    <button className='burger' onClick={() => setIsNavExpanded(!isNavExpanded)}>
-        {isNavExpanded ? <FaTimes /> : <FaBars />}
-      </button>
+    <button className='burger' onClick={() => setIsNavExpanded(!isNavExpanded)} aria-label={isNavExpanded ? "Close Menu" : "Open Menu"}>
+    {isNavExpanded ? <FaTimes /> : <FaBars />}
+</button>
 
       <div className="logo-container">
         <a className="navbar-brand logo">
@@ -25,11 +26,9 @@ const NavBar = () => {
         <li className="nav-item">
         <Link className='nav-link active' to="home" spy={true} smooth={true} offset={-70} duration={500}>Home</Link>
         </li>
-
         <li className="nav-item">
         <Link to="services"  className='nav-link active' spy={true} smooth={true} offset={-70} duration={500}>Services</Link>
         </li>
-
         <li className="nav-item">
         <Link  to="quote" className='nav-link active' spy={true} smooth={true} offset={-70} duration={500}>Quote</Link>
         </li>

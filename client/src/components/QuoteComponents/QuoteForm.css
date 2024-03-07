@@ -86,8 +86,9 @@
           max-width: 95%;
             padding: 20px;
         }
-        .file, .form-item, .quote-button {
-            width: 100%;
+        .quote-button, .file > .form-control {
+          width: 80%; 
+          margin: 10px auto;
         }
   
     }
@@ -102,4 +103,15 @@
             margin: auto;
         }
       
+    }
+
+    .quote-button, .file > .form-control {
+      width: 50%;
+      margin: 10px auto;
+    }
+
+    .file {
+      display: flex;
+      justify-content: center;
+      width: 100%;
     }

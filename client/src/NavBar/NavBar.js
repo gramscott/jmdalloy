@@ -11,15 +11,17 @@ const NavBar = () => {
   return (
 
     <nav className="navbar-expand-lg">
-    <button className='burger' onClick={() => setIsNavExpanded(!isNavExpanded)} aria-label={isNavExpanded ? "Close Menu" : "Open Menu"}>
-    {isNavExpanded ? <FaTimes /> : <FaBars />}
-</button>
+   
 
       <div className="logo-container">
         <a className="navbar-brand logo">
           <img src={logo} alt="logo" className="logo active"/>
         </a>
       </div>
+
+      <button className='burger' onClick={() => setIsNavExpanded(!isNavExpanded)} aria-label={isNavExpanded ? "Close Menu" : "Open Menu"}>
+    {isNavExpanded ? <FaTimes /> : <FaBars />}
+    </button>
       <div className={`nav-menu ${isNavExpanded ? 'nav-menu-expanded' : ''}`}>
 
         <ul className="nav justify-content-center">

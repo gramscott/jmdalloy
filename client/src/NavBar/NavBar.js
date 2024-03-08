@@ -10,8 +10,12 @@ const NavBar = () => {
 
   return (
 
-    <nav className="navbar-expand-lg">
-   
+    <nav className="nav navbar-expand-lg">
+    <div className="container-fluid">
+
+        <button className='burger' onClick={() => setIsNavExpanded(!isNavExpanded)} aria-label={isNavExpanded ? "Close Menu" : "Open Menu"}>
+    {isNavExpanded ? <FaTimes /> : <FaBars />}
+    </button>
 
       <div className="logo-container">
         <a className="navbar-brand logo">
@@ -19,9 +23,6 @@ const NavBar = () => {
         </a>
       </div>
 
-      <button className='burger' onClick={() => setIsNavExpanded(!isNavExpanded)} aria-label={isNavExpanded ? "Close Menu" : "Open Menu"}>
-    {isNavExpanded ? <FaTimes /> : <FaBars />}
-    </button>
       <div className={`nav-menu ${isNavExpanded ? 'nav-menu-expanded' : ''}`}>
 
         <ul className="nav justify-content-center">
@@ -45,6 +46,7 @@ const NavBar = () => {
         </li>
       </ul>
       </div>
+    </div>
       </nav>
 
   );

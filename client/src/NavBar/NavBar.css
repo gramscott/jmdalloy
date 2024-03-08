@@ -1,87 +1,87 @@
-
 .logo-container {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    padding: 10px; 
-    height: 150px; 
-    margin-bottom: 30px;
-    padding-top: 30px;
-  }
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  padding: 10px; 
+  height: 150px; 
+  margin-bottom: 30px;
+  padding-top: 30px;
+  max-width: 100%;
 
+}
+.burger {
+  display: none;
+  cursor: pointer;
+  background-color: orangered;
+  font-size: 24px; 
+  border-radius: 5px;
+
+}
+
+@media (max-width: 768px) {
   .burger {
+    display: block;
+  }
+
+  .nav-menu,
+  .nav-menu-expanded {
     display: none;
-    cursor: pointer;
-    background-color: orangered;
-    font-size: 24px; 
-    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-menu-expanded {
+    display: block;
+  }
+
+  .nav {
+    flex-direction: column;
 
   }
 
-  @media (max-width: 768px) {
-    .burger {
-      display: block;
-    }
-
-    .nav-menu,
-    .nav-menu-expanded {
-      display: none;
-      width: 100%;
-      text-align: center;
-    }
-
-    .nav-menu-expanded {
-      display: block;
-    }
-    .nav {
-      flex-direction: column;
-    }
-
-    nav .nav-item .nav-link:hover {
-      color: orangered; 
-    }
-  
-    .nav-item {
-      margin: 10px 0; 
-    }
-    .logo {
-      width: 200px;
-      height: 175px;
-    }
-  
-    
+  nav .nav-item .nav-link:hover {
+    color: orangered; 
   }
 
-  .logo {
-    width: 400px; 
-    height: 350px;
-    transition: transform 0.3s ease, border 0.3s ease;
-    box-sizing: border-box;
+  .nav-item {
+    margin: 10px 0; 
+
   }
 
-  .logo:hover {
-    transform: scale(1.1);
-  }
- 
+ }
 
-  nav {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background-color: #000;
-  }
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #000;
+}
 
 nav .nav-item .nav-link {
-  color: white;
-  font-size: 18px;
-  margin: 0 15px;
-  padding-left: 30px;
-  font-family: 'Arial', sans-serif;
-  transition: color 0.3s ease;
-  padding-bottom: 20px;
+color: white;
+font-size: 18px;
+margin: 0 15px;
+padding-left: 30px;
+font-family: 'Arial', sans-serif;
+transition: color 0.3s ease;
+padding-bottom: 20px;
+font-size: large;
 }
 
 nav .nav-item .nav-link:hover {
-  color: orangered; 
+color: orangered; 
 }
+
+.logo {
+  width: 400px;
+  height: 350px;
+  transition: transform 0.3s ease, border 0.3s ease;
+  box-sizing: border-box;
+}
+/* 
+.logo:hover {
+  transform: scale(1.1);
+}
+ */

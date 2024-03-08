@@ -1,5 +1,5 @@
-.alloy-container {
-    padding: 40px;
+.alloy-container, .caliper-container, .colour-changes-container, .custom-colours-container, .diamond-cutting-container {
+    padding: 5%;
     margin:auto;
     border: 1px solid white;
     border-radius: 10px;
@@ -9,6 +9,37 @@
     font-style: italic;
     color: white;
 }
+
+
+.next-page-pics img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px; 
+    display: block;
+    margin: 5% auto;
+} 
+
+.slick-next {
+    right: 10%;
+    font-size: 5vw;
+    font-weight: bold;
+    color: white;
+}
+
+.slick-prev {
+    left: 10%;
+    font-size: 5vw;
+    font-weight: bold;
+    color: white;
+}
+
+
+.slick-prev:before, .slick-next:before {
+    font-family: 'Font Awesome 5 Free';
+    color: white;
+    font-weight: 900;
+    font-size: 60px;
+} 
 
 h3 {
     margin-bottom: 20px; 
@@ -25,6 +56,35 @@ h3 {
     font-size: 100%;
 }
 
+.benefits {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.process-list {
+counter-reset: process-counter; 
+list-style: none;
+padding-left: 0;
+}
+
+.process-list li {
+counter-increment: process-counter; 
+position: relative; 
+padding-left: 25px; 
+}
+
+.process-list li:before {
+content: counter(process-counter) ". "; 
+position: absolute;
+left: 0;
+color: orangered; 
+font-weight: bold; 
+}
+
+.process {
+margin-bottom: 20px;
+color: white;
+}
 
 .benefits, ol {
     text-align: justify;
@@ -32,40 +92,28 @@ h3 {
     line-height: 1.8; 
     font-size: 1rem;
 }
-
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
 .benefits:before {
     content: "✓ ";
     color: orangered;
     margin-right: 5px;
 }
 
-.next-page-pics img {
-    width: 30%;
-    height: auto;
-    border-radius: 10px; 
-    display: block;
-    margin-top: 5%;
-    margin-left: auto;
-    margin-right: auto;
-
-} 
+ul {
+    list-style: none;
+    padding-left: 0;
+}
 
 .home-button {
-    margin: 10px;
+    margin: 2% auto;
     background-color: orangered;
     border: 2px solid orangered;
     border-radius: 5px;
     text-decoration: none;
-    padding: 10px;
+    max-width: 200px;
+    padding: 2%;
     font-style: normal;
     font-weight: bold;
-    width: 50%;
+    width: 80%;
     color: black;
     font-weight: bold;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -75,70 +123,37 @@ ul {
 .home-button:hover{
     color: white;
 }
-
-
-.slick-next {
-    right: 45px;
-}
-
-.slick-prev {
-    left: 25px;
-}
-
-.slick-prev, .slick-next {
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-
-.slick-prev:before, .slick-next:before {
-    font-family: 'Font Awesome 5 Free';
-    color: white;
-    font-weight: 900;
-    font-size: 60px;
-}
-
-.service-description  {
-    padding: 20px;
-    border: 1px solid white;
-    border-radius: 10px;
-    margin-bottom: 20px;
-
-}
-
 @media (max-width: 768px) {
-    .service-description, .next-page-pics img {
-      width: 100%; 
+    .alloy-description, .benefits, .process, .home-button, h3 {
+      font-size: 5vw; /* Increase font size for better readability */
+    }
+  
+    .next-page-pics img {
+      width: 100%;
+    }
+  
+    .home-button {
+      width: 90%; 
+    }
+  
+    .slick-prev, .slick-next {
+      right: 20px;
+      left: 20px;
     }
   }
 
-  .benefits {
-        margin-bottom: 20px;
-        color: white;
+  @media (max-width: 480px) {
+    .alloy-container, .caliper-container, .colour-changes-container, .custom-colours-container, .diamond-cutting-container {
+      max-width: 100%; 
+      padding: 10px;
+    }
+  
+    h3, .alloy-description, .benefits, .process {
+      font-size: 6vw; 
+    }
+  
+    .process-list li, .benefits:before {
+      font-size: 6vw; 
+    }
   }
-
-  .process-list {
-    counter-reset: process-counter; 
-    list-style: none;
-    padding-left: 0;
-}
-
-.process-list li {
-    counter-increment: process-counter; 
-    position: relative; 
-    padding-left: 25px; 
-}
-
-.process-list li:before {
-    content: counter(process-counter) ". "; 
-    position: absolute;
-    left: 0;
-    color: orangered; 
-    font-weight: bold; 
-}
-
-.process {
-    margin-bottom: 20px;
-    color: white;
-}
+  

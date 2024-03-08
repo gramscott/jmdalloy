@@ -10,6 +10,8 @@ import AlloyWheelRefurbishment4 from '../../images/alloy_wheel_ref_4.jpg';
 
 const AlloyWheelRefurbishment = () => {
 
+
+
   const slideRef = useRef(null);
 
   const settings = {
@@ -48,8 +50,8 @@ const AlloyWheelRefurbishment = () => {
 
         <h3>Benefits</h3>
         <ul>
-          <li className='benefits'>Improve your car's appearance and value</li>
-          <li className='benefits'>Prevent heavy lease return penalties</li>
+          <li className='benefits'>Improve your car's appearance and value.</li>
+          <li className='benefits'>Prevent heavy lease return penalties.</li>
         </ul>
 
         <hr>
@@ -57,14 +59,14 @@ const AlloyWheelRefurbishment = () => {
 
 
         <h3>Process</h3>
-    <ol className="process-list">
-    <li className='process'>Tyres and wheel weights are removed</li>
-    <li className='process'>Kerb damage is removed and surfaces are prepped for paint</li>
-    <li className='process'>Primer and base coat are applied in our spray booth (All factory wheels are spray painted using the same materials we use)</li>
-    <li className='process'>Lacquer is applied to give a gloss, satin or Matt finish then baked and cured</li>
-    <li className='process'>Tyres are fitted back on the wheels then fully balanced and fitted back on the car</li>
-    </ol>
-    <a href='/' className='home-button'>Home</a>
+     <ol className="process-list">
+     <li className='process'>Tyres and wheel weights are removed.</li>
+      <li className='process'>Kerb damage is removed and surfaces   are prepped for paint.</li>
+     <li className='process'>Primer and base coat are applied in our spray booth (All factory wheels are spray painted using the same materials we use).</li>
+      <li className='process'>Lacquer is applied to give a gloss, satin or Matt finish then baked and cured.</li>
+     <li className='process'>Tyres are fitted back on the wheels then fully balanced and fitted back on the car.</li>
+     </ol>
+     <a href='/' className='home-button'>Home</a>
     </div>
      
     </div>

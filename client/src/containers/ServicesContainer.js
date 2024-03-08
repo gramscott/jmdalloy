@@ -3,7 +3,7 @@ import ServiceList from '../components/ServicesComponents/ServiceList'
 import { Element } from 'react-scroll';
 import alloyWheelMainPic from '../images/alloy_wheel_ref_pic.JPG'
 import diamondCuttingMainPic from '../images/diamond_cutting_main_pic.jpg'
-import colourChangesMainPic from '../images/colour_change_main_pic.jpg'
+import colourChanges2 from '../images/colour_change2.jpg'
 import brakeCaliperMain from '../images/brake_caliper_main_pic.jpg'
 
 const ServicesContainer = () => {
@@ -28,7 +28,7 @@ const ServicesContainer = () => {
     {
       id: 2,
       name: 'Colour Changes',
-      image: colourChangesMainPic,
+      image: colourChanges2,
       alt: 'Colour Changes',
       path: '/colour-changes'
     },

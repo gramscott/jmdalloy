@@ -26,10 +26,10 @@ const ColourChanges = () => {
     <div>
       <Slider ref={slideRef} {...settings}>
       <div className='next-page-pics'>
-        <img src={colourChangesMainPic} alt='Colour Change' />
+        <img src={colourChanges2} alt='Colour Change 2' />
       </div>
       <div className='next-page-pics'>
-        <img src={colourChanges2} alt='Colour Change 2' />
+        <img src={colourChangesMainPic} alt='Colour Change' />
       </div>
 
       </Slider>

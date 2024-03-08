@@ -78,7 +78,11 @@ ul {
 
 
 .slick-next {
-    right: 25px;
+    right: 45px;
+}
+
+.slick-prev {
+    left: 25px;
 }
 
 .slick-prev, .slick-next {

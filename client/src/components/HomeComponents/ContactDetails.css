@@ -23,14 +23,13 @@
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.contact-item:hover {
+  color: white;
+}
+
 .contact-item a {
   color: black;
   text-decoration: none;
-}
-
-
-.contact-item:hover {
-  color: white;
 }
 
 .contact-item:hover a {

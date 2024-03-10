@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './DiamondCutting.css';
+import './GeneralNextPageStyles.css';
 import diamondCuttingMainPic from '../../images/diamond_cutting_main_pic.jpg';
 import diamondCutting2 from '../../images/diamond_cutting2.jpg';
 import diamondCutting3 from '../../images/diamond_cutting3.jpg';

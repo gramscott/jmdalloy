@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './BrakeCaliperResprays.css';
+import './GeneralNextPageStyles.css';
 import brakeCaliperMain from '../../images/brake_caliper_main_pic.jpg'
 import brakeCaliper2 from '../../images/brake_caliper2.jpg'
 import brakeCaliper3 from '../../images/brake_caliper3.jpg'

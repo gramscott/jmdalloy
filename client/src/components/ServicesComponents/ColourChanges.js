@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './ColourChanges.css';
+import './GeneralNextPageStyles.css';
 import colourChangesMainPic from '../../images/colour_change_main_pic.jpg';
 import colourChanges2 from '../../images/colour_change2.jpg';
 

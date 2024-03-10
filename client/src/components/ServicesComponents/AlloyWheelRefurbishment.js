@@ -3,14 +3,14 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './AlloyWheelRefurbishment.css';
+import './GeneralNextPageStyles.css';
 import AlloyWheelRefurbishment1 from '../../images/alloy_wheel_ref_pic.JPG';
 import AlloyWheelRefurbishment2 from '../../images/alloy_wheel_ref_2.jpg';
 import AlloyWheelRefurbishment3 from '../../images/alloy_wheel_ref_3.jpg';
 import AlloyWheelRefurbishment4 from '../../images/alloy_wheel_ref_4.jpg';
 
+
 const AlloyWheelRefurbishment = () => {
-
-
 
   const slideRef = useRef(null);
 
@@ -21,8 +21,9 @@ const AlloyWheelRefurbishment = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     nextArrow: <div aria-hidden="true"></div>,
-    prevArrow: <div aria-hidden="true"></div>
+    prevArrow: <div aria-hidden="true"></div>,
   };
+  
 
   return (
     <div>
@@ -30,9 +31,9 @@ const AlloyWheelRefurbishment = () => {
         <div className='next-page-pics'>
           <img src={AlloyWheelRefurbishment1} alt='Alloy Wheel Refurbishment' />
         </div>
-        <div className='next-page-pics'>
+        {/* <div className='next-page-pics'>
           <img src={AlloyWheelRefurbishment2} alt='Alloy Wheel Refurbishment 2' />
-        </div>
+        </div> */}
         <div className='next-page-pics'>
           <img src={AlloyWheelRefurbishment3} alt='Alloy Wheel Refurbishment 3' />
         </div>

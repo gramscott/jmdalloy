@@ -2,9 +2,9 @@
 .next-page-service-info-container {
   padding: 30px;
   border: 1px solid #fff;
-  border-radius: 50px;
-  margin: 40px auto;
-  max-width: 90%;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 80%;
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
   font-style: italic;
@@ -17,7 +17,6 @@
   flex-wrap: wrap;
   max-width: 50%;
   padding-top: 5%;
-  justify-content: space-between;
   margin: 0 -15px;
 }
 
@@ -35,11 +34,24 @@
   }
 }
 
-@media (max-width: 1024px) {
+
+@media (max-width: 768px) {
   .next-page-service-info-container {
-    max-width: 75%;
+    max-width: 95%; 
+    padding: 20px; 
+    margin: 20px auto;
+    font-size: 90%; 
   }
 }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .next-page-service-info-container {
+    max-width: 80%; 
+    padding: 25px; 
+    margin: 30px auto;
+  }
+}
+
 
 .alloy-info {
   line-height: 1.8; 
@@ -101,5 +113,3 @@ h3 {
   .home-button:hover {
     color: white;
   }
-
-  

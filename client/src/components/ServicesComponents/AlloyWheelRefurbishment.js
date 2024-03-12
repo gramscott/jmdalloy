@@ -1,9 +1,8 @@
-import React, { useRef,  } from 'react';
+import React, { useRef  } from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import './AlloyWheelRefurbishment.css';
-import './GeneralNextPageStyles.css'; 
+import './NextPageServiceStyles.css';
 import AlloyWheelRefurbishment1 from '../../images/alloy_wheel_ref_pic.JPG';
 import AlloyWheelRefurbishment3 from '../../images/alloy_wheel_ref_3.jpg';
 import AlloyWheelRefurbishment4 from '../../images/alloy_wheel_ref_4.jpg';
@@ -19,6 +18,8 @@ const AlloyWheelRefurbishment = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    initialSlide: 0,
+    
   };
 
   const goToNextSlide = () => {
@@ -34,22 +35,29 @@ const AlloyWheelRefurbishment = () => {
     <div className='next-page-service-container'>
        <Slider {...settings} ref={sliderRef}>
        <div className="next-page-service-slides">
-        <img src={AlloyWheelRefurbishment1} alt="pic-1" className="img-fluid pic-1" />
+        <img src={AlloyWheelRefurbishment1} alt="pic-1" className="img-fluid" />
         </div>
 
          
         <div className="next-page-service-slides">
-        <img src={AlloyWheelRefurbishment3} alt="pic-2" className="img-fluid pic-2" />
+        <img src={AlloyWheelRefurbishment3} alt="pic-1" className="img-fluid pic-1"/>
         </div>
 
         <div className="next-page-service-slides">
-        <img src={AlloyWheelRefurbishment4} alt="pic-3" className="img-fluid pic-3" /> 
+        <img src={AlloyWheelRefurbishment4} alt="pic-3" className="img-fluid" /> 
+      
       </div>
      </Slider>
 
+     <div className="button-navigation">
+    <button className="prev-button" onClick={goToPrevSlide}>Previous</button>
+    <button className="next-button" onClick={goToNextSlide} >Next</button>
+    </div>
+
+
       <div className="next-page-service-info-container">
       <h2>Alloy Wheel Refurbishment</h2>
-      <p className='alloy-info'>Alloy wheels can become damaged and weathered over time. Refurbishment can bring them back to <strong>new-like condition</strong>.</p>
+      <p>Alloy wheels can become damaged and weathered over time. Refurbishment can bring them back to <strong>new-like condition</strong>.</p>
       <hr>
       </hr>
       <h3>Benefits</h3>
@@ -70,11 +78,6 @@ const AlloyWheelRefurbishment = () => {
       </ol>
       <a href='/' className='home-button'>Home</a>
       </div>
-
-    <div className="button-navigation">
-    <button className="prev-button" onClick={goToPrevSlide}>Previous</button>
-    <button className="next-button" onClick={goToNextSlide} >Next</button>
-    </div>
 
     </div>
    

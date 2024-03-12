@@ -2,8 +2,7 @@ import React, { useRef } from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import './BrakeCaliperResprays.css';
-import './GeneralNextPageStyles.css';
+import './NextPageServiceStyles.css';
 import brakeCaliperMain from '../../images/brake_caliper_main_pic.jpg'
 import brakeCaliper2 from '../../images/brake_caliper2.jpg'
 import brakeCaliper3 from '../../images/brake_caliper3.jpg'
@@ -12,38 +11,54 @@ import brakeCaliper4 from '../../images/brake_caliper4.jpg'
 
 const BrakeCaliperResprays = () => {
 
-    const slideRef = useRef(null);
+  const sliderRef = useRef(null); 
 
-    const settings = {
-      dots: false,
-      infinite: false,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      nextArrow: <div aria-hidden="true"></div>,
-      prevArrow: <div aria-hidden="true"></div>
-    };
+  const settings = {
+    dots: false, 
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    
+  };
+
+  const goToNextSlide = () => {
+    sliderRef.current.slickNext(); 
+  };
+
+  const goToPrevSlide = () => {
+    sliderRef.current.slickPrev();
+  };
+
 
   return (
-    <div>
-      <Slider ref={slideRef} {...settings}>
-        <div className='next-page-pics'>
-            <img src={brakeCaliperMain} alt='Brake Caliper Resprays' />
+    <div className='next-page-service-container'>
+           <Slider {...settings} ref={sliderRef}>
+           <div className="next-page-service-slides">
+            <img src={brakeCaliperMain} alt="pic-1" className="img-fluid" />
         </div>
         <div className='next-page-pics'>
-            <img src={brakeCaliper2} alt='Brake Caliper Resprays 2' />
+            <img src={brakeCaliper2} alt="pic-2" className="img-fluid" />
         </div>
         <div className='next-page-pics'>
-            <img src={brakeCaliper3} alt='Brake Caliper Resprays 3' />
+            <img src={brakeCaliper3} alt="pic-3" className="img-fluid" />
         </div>
         <div className='next-page-pics'>
-            <img src={brakeCaliper4} alt='Brake Caliper Resprays 4' />
+            <img src={brakeCaliper4} alt="pic-4" className="img-fluid" />
         </div>
 
       </Slider>
-        <div className='mt-5 caliper-container'>
+
+      <div className="button-navigation">
+    <button className="prev-button" onClick={goToPrevSlide}>Previous</button>
+    <button className="next-button" onClick={goToNextSlide} >Next</button>
+    </div>
+
+
+      <div className="next-page-service-info-container">
         <h2>Brake Caliper Resprays</h2>
-        <p className='caliper-description'>We use <strong>high quality paint</strong> designed to <strong>withstand the heat from brakes</strong>. We offer a <strong>range of colours and finishes</strong> and can add <strong>decals for that final touch</strong>.</p>
+        <p>We use <strong>high quality paint</strong> designed to <strong>withstand the heat from brakes</strong>. We offer a <strong>range of colours and finishes</strong> and can add <strong>decals for that final touch</strong>.</p>
         <hr>
         </hr>
         <h3>Process</h3>

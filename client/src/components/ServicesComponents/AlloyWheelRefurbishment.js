@@ -41,7 +41,7 @@ const AlloyWheelRefurbishment = () => {
 
          
         <div className="next-page-service-slides">
-        <img src={AlloyWheelRefurbishment3} alt="pic-1" className="img-fluid pic-1"/>
+        <img src={AlloyWheelRefurbishment3} alt="pic-1" className="img-fluid"/>
         </div>
 
         <div className="next-page-service-slides">

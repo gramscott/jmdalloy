@@ -39,13 +39,13 @@ const BrakeCaliperResprays = () => {
            <div className="next-page-service-slides">
             <img src={brakeCaliperMain} alt="pic-1" className="img-fluid" />
         </div>
-        <div className='next-page-pics'>
+        <div className="next-page-service-slides">
             <img src={brakeCaliper2} alt="pic-2" className="img-fluid" />
         </div>
-        <div className='next-page-pics'>
+        <div className="next-page-service-slides">
             <img src={brakeCaliper3} alt="pic-3" className="img-fluid" />
         </div>
-        <div className='next-page-pics'>
+        <div className="next-page-service-slides">
             <img src={brakeCaliper4} alt="pic-4" className="img-fluid" />
         </div>
 

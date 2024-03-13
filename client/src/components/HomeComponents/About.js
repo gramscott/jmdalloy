@@ -4,7 +4,7 @@ import './About.css';
 const About = () => {
   return (
     <section className="intro">
-      <h2>About JMD Alloys</h2>
+      <h2>About JMD Alloys...</h2>
       <p>
         Based in Lanark, <strong>JMD Alloys</strong> has many years of experience in the industry. We are known for being professional, informative, and well-priced.
       </p>

@@ -4,7 +4,7 @@ import './QuoteForm.css';
 
 const QuoteForm = ({ onSubmit }) => {
   return (
-    <div className='quote-container'>
+    <div className='quote-container pt-5'>
       <h2>Get Your Free Quote Today!</h2>
       
       <Form  action='https://api.web3forms.com/submit' method="POST"className='form-layout' onSubmit={onSubmit}>
@@ -41,7 +41,7 @@ const QuoteForm = ({ onSubmit }) => {
 
           </div>
 
-          <div className="col-lg-6 row">
+          <div className="col-lg-6">
           <Form.Group controlId="formEmail" className='form-item'>
               <Form.Control type="email" placeholder="Email Address" name="email" required/>
             </Form.Group>
@@ -63,7 +63,7 @@ const QuoteForm = ({ onSubmit }) => {
         <p>
         <b>Upload images of your wheels (Maximum 8 images). Max image size 4mb. Allowed file types: .jpeg/.gif/.png/.pdf </b>
         </p>
-        <Form.Group controlId="formChooseAFile" className='form-item file'>
+        <Form.Group controlId="formChooseAFile" className='form-item file col-lg-6'>
               <Form.Control type="file" onChange={(e) => {
                 console.log(e.target.files);
               }}  name="file" multiple required/>

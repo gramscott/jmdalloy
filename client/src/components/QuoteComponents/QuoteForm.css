@@ -1,117 +1,75 @@
-
-/* The full container */
 .quote-container {
-    border: 1px solid #e0e0e0;
-    border-radius: 50px;
-    margin: 40px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    max-width: 90%;
-    padding: 20px;
-    min-height: 650px;
-  }
-  
-  h2 {
-    padding-top: 40px;
-    margin-bottom: 20px;
-    font-style: italic;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  .form-layout {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 3%;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  display: flex; 
+  flex-direction: column;  
+}
 
+.form-group-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  padding: 0 15%;
+}
 
-  }
-  
+.form-item {
+  width: 100%;
+  margin: 10px;
+}
+
+@media(max-width : 992px) {
   .form-group-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
+    flex-direction: column;
+    padding: 10%;
   }
 
-  .form-item, .quote-button {
+  .file, .quote-button {
+    width: auto;
+  }
+
+}
+
+p {
+  color: #fff;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.file {
+  width: 50%;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 200px;
+
+}
+
+@media(max-width : 992px) {
+  .file {
     width: 100%;
-    margin: 10px;
+    padding-left: 0;
+    font-size: 1rem;
   }
-  
-  .quote-button {
-    background-color: orangered;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    color: black;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
+ 
+}
 
-    .quote-button:hover {
-        color: white;
-        background-color: orangered;
-    }
+.quote-button {
+  margin: 10px;
+  background-color: orangered !important;
+  border: 2px solid orangered !important;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  color: black;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 
-    .form-item {
-        margin: 10px;
-        padding: 5px;
-        text-decoration: none;
-        transition: background-color 0.3s ease, color 0.3s ease;
-    }
+.quote-button:hover {
+  color: white;
 
-
-    .file {
-        width: 60%;
-        align-self: start;
-
-    }
-
-    p {
-        font-size: 15px;
-        font-family: 'Arial', sans-serif;
-        color: white;
-        text-align: left;
-
-    }
-
-    @media (max-width: 991px) {
-        .quote-container {
-          max-width: 95%;
-            padding: 20px;
-        }
-        .quote-button, .file > .form-control {
-          width: 80%; 
-          margin: 10px auto;
-        }
-  
-    }
-
-    @media (max-width: 768px) {
-       .form-group-container {
-           flex-direction: column;
-       }
-
-        .file {
-            width: 80%;
-            margin: auto;
-        }
-      
-    }
-
-    .quote-button, .file > .form-control {
-      width: 50%;
-      margin: 10px auto;
-    }
-
-    .file {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-    }
+}

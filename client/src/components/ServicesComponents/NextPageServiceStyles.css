@@ -27,9 +27,9 @@
     flex-wrap: wrap;
     justify-content: center; 
     align-items: center;
-    max-width: 100%;
+    max-width: 80%;
     padding-top: 5%;
-    margin: 0 auto;
+    margin: auto;
     padding: 5% 0;
   }
 

@@ -4,6 +4,7 @@ import ServicesContainer from './ServicesContainer';
 import QuoteContainer from './QuoteContainer';
 import { Element } from 'react-scroll';
 import NavBar from '../NavBar/NavBar.js';
+import JoshContainer from './JoshContainer.js';
 
 const MainLandingPage = () => {
 
@@ -19,6 +20,9 @@ const MainLandingPage = () => {
     </Element>
     <Element name='quote'>
         <QuoteContainer/>
+    </Element>
+    <Element name='about-josh'>
+        <JoshContainer/>
     </Element>
     </div>
   )

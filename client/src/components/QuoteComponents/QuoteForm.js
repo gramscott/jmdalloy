@@ -60,7 +60,7 @@ const QuoteForm = ({ onSubmit }) => {
           </div>
         </div>
 
-        <p>
+        <p className='upload-instructions'>
         <b>Upload images of your wheels (Maximum 8 images). Max image size 4mb. Allowed file types: .jpeg/.gif/.png/.pdf </b>
         </p>
         <Form.Group controlId="formChooseAFile" className='form-item file col-lg-6'>

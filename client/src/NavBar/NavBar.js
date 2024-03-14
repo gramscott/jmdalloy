@@ -37,7 +37,7 @@ const NavBar = () => {
               <Link to="quote" className='nav-link active' spy={true} smooth={true} offset={-70} duration={500}>Quote</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link active" href="/about-josh">About Josh</a>
+              <Link to='about-josh' className="nav-link active"  spy={true} smooth={true} offset={-70} duration={500}>About Josh</Link>
             </li>
             <li className="nav-item">
               <a className="nav-link active" href="/faq">Frequently Asked Questions</a>

@@ -51,6 +51,7 @@ nav .nav-item .nav-link {
 @media (max-width: 768px) {
   .burger {
     display: block;
+    
   }
 
   .nav-menu,
@@ -78,9 +79,3 @@ nav .nav-item .nav-link {
 
   }
  }
-
-
-
-
-
-

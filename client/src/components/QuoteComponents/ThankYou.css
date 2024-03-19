@@ -24,6 +24,9 @@
 .thank-you-container p {
     font-size: 100%;
     margin: 20px 0;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
 }
 
 .thank-you-container button {

@@ -1,0 +1,67 @@
+.slideshow-container {
+ max-width: 1500px;
+  margin: 50px auto;
+  padding: 3%;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  }
+  
+  .slide-image {
+    width: 100%; 
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto; 
+    border-radius: 15px; 
+  }
+
+  .thumbnail-container .thumbnail:focus {
+    outline: none !important;
+  }
+  
+  
+  
+  .thumbnail {
+    cursor: pointer;
+    width: 80px;
+    height: 60px; 
+    object-fit: cover; 
+    margin: 5px; 
+    border-radius: 10px; 
+    border: 2px solid white; 
+  }
+
+
+
+  .thumbnail-container .slick-slide {
+    padding: 5px; 
+  }
+  
+  .thumbnail-container {
+    margin-top: 20px;
+  }
+  
+  .slick-current .thumbnail {
+    border-color: orangered; 
+  }
+  
+  @media (max-width: 768px) {
+    .thumbnail {
+      width: 60px; 
+      height: 45px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .slideshow-container {
+      margin: 20px auto;
+      padding: 2%;
+    }
+  
+    .thumbnail {
+      width: 50px; 
+      height: 38px;
+    }
+  }
+  

@@ -4,7 +4,7 @@ import './Reviews.css';
 const Reviews = () => {
   return (
     <div className='review-container pt-5'>
-      <h2>Our Reviews</h2>
+      <h2>Testimonials</h2>
       <div className="reviews-list row">
       <div className="col-lg-6">
       <p className='review'>

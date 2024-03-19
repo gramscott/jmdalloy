@@ -15,7 +15,7 @@
 
 /* Review List: Leveraging Bootstrap Grid */
 .reviews-list {
-  margin: 0; /* Adjust margins for consistent spacing */
+  margin: 0; 
   padding: 0 4%; /* Adjust padding for a bit of breathing room on sides */
 }
 

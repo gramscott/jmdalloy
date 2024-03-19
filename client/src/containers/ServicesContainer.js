@@ -1,10 +1,10 @@
 import React from 'react'
 import ServiceList from '../components/ServicesComponents/ServiceList'
-import { Element } from 'react-scroll';
 import alloyWheelMainPic from '../images/alloy_wheel_ref_pic.JPG'
 import diamondCuttingMainPic from '../images/diamond_cutting_main_pic.jpg'
 import colourChanges2 from '../images/colour_change2.jpg'
 import brakeCaliperMain from '../images/brake_caliper_main_pic.jpg'
+import SlideShow from '../components/ServicesComponents/SlideShow'
 
 const ServicesContainer = () => {
 
@@ -50,12 +50,40 @@ const ServicesContainer = () => {
     
   ];
 
+  const slideshowData = [
+
+    {
+      id: 1,
+      image: diamondCuttingMainPic,
+      alt: 'Diamond Cutting',
+    },
+
+    {
+      id: 2,
+      image: brakeCaliperMain,
+      alt: 'Brake Caliper Resprays',
+    },
+
+    {
+      id: 3,
+      image: colourChanges2,
+      alt: 'Colour Changes',
+    },
+
+    {
+      id: 4,
+      image: alloyWheelMainPic,
+      alt: 'Alloy Wheel Refurbishment',
+    }
+  ]
+
 
   return (
 
-    <Element name='services'>
+    <div name='services'>
     <ServiceList  serviceData={serviceData}/>
-    </Element>
+    <SlideShow slideshowData={slideshowData}/>
+    </div>
 
   )
 }

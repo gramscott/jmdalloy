@@ -10,7 +10,7 @@ const ServiceList = ( {serviceData }) => {
   return (
 
     <div className='service-container'>
-    <h2>Our Services</h2>
+    <h2>Services</h2>
     <div className='service-list'>
     {firstRowServices.map(service => (
       <ServiceItem key={service.id} service={service} />

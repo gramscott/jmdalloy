@@ -13,10 +13,9 @@
 
 
 
-/* Review List: Leveraging Bootstrap Grid */
 .reviews-list {
   margin: 0; 
-  padding: 0 4%; /* Adjust padding for a bit of breathing room on sides */
+  padding: 0 4%;
 }
 
 .review {
@@ -48,27 +47,24 @@
 .reviews-footer {
   margin-top: 2rem;
   font-style: italic;
-  text-align: center; /* Center align for aesthetics */
-  font-size: 0.9rem; /* Slightly smaller font for the footer */
-  color: white; /* Adjusted for contrast */
+  text-align: center; 
+  font-size: 0.9rem;
+  color: white; 
 }
 
 .reviews-footer a {
-  color: orangered; /* Match the primary color theme */
-  text-decoration: none; /* No underline by default */
+  color: orangered;
+  text-decoration: none; 
 }
 
 .reviews-footer a:hover {
-  text-decoration: underline; /* Underline on hover for clarity */
+  text-decoration: underline; 
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
   .reviews-list {
-    padding: 0 2%; /* Reduced padding on smaller screens */
+    padding: 0 2%; 
   }
   
-  .review-container, .review {
-    border-radius: 10px; /* Smaller radius for smaller screens */
-  }
+  
 }

@@ -7,7 +7,7 @@ const QuoteForm = ({ onSubmit }) => {
     <div className='quote-container pt-5'>
       <h2>Get Your Free Quote Today!</h2>
       
-      <Form  action='https://api.web3forms.com/submit' method="POST"className='form-layout' onSubmit={onSubmit}>
+      <Form  action='https://api.web3forms.com/submit' method="POST" enctype="multipart/form-data" className='form-layout' onSubmit={onSubmit}>
         <input type="hidden" name="apikey" value="099dd778-2dab-49cf-b4cc-9784c27b5566"/>
         <input type="hidden" name="redirect" value="http://localhost:3000/thank-you"/>
         <input type="hidden" name="subject" value="New Quote Submission"/>
@@ -64,9 +64,7 @@ const QuoteForm = ({ onSubmit }) => {
         <b>Upload images of your wheels (Maximum 8 images). Max image size 4mb. Allowed file types: .jpeg/.gif/.png/.pdf </b>
         </p>
         <Form.Group controlId="formChooseAFile" className='form-item file col-lg-6'>
-              <Form.Control type="file" onChange={(e) => {
-                console.log(e.target.files);
-              }}  name="file" multiple required/>
+        <input type="file" id="attachment" name="attachment" accept="image/jpeg,image/png" className='file' required />
             </Form.Group>
 
         <Button  className='quote-button' variant="primary" type="submit">

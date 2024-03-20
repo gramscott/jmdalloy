@@ -39,3 +39,11 @@
 .icon-spacing {
   margin-right: 5px;
 } 
+
+
+@media (max-width: 768px) {
+  .contact-wrapper {
+    padding-bottom: 0;
+  }
+  
+}

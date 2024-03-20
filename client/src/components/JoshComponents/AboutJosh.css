@@ -37,6 +37,13 @@
   margin: 15px auto;
 }
 
+@media (max-width: 1368px) {
+  .josh-container {
+    max-width: 950px;
+    padding: 90px;
+  }
+}
+
 @media (max-width: 768px) {
   .content-container {
     flex-direction: column; 
@@ -56,9 +63,7 @@
 
 @media (max-width: 480px) {
   .josh-container {
-    margin: 30px auto; 
     padding:  5%; 
-    border-radius: 25px; 
   }
 
   .content-container {

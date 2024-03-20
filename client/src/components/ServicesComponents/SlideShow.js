@@ -46,7 +46,7 @@ const SlideShow = ({ slideshowData }) => {
       <Slider {...mainSettings} ref={slider1}>
         {slideshowData.map(slide => (
           <div key={slide.id} className='slide'>
-            <img src={slide.image} alt={slide.alt} className="slide-image" />
+            <img src={slide.image} alt={slide.alt} className="slide-image img-fluid" />
           </div>
         ))}
       </Slider>

@@ -52,6 +52,9 @@ h2, h4 {
   .service-list-item {
     flex: 0 0 100%;
   }
+  .service-list {
+    margin: auto;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {

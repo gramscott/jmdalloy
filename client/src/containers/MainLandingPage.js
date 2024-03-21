@@ -6,6 +6,7 @@ import { Element } from 'react-scroll';
 import NavBar from '../NavBar/NavBar.js';
 import JoshContainer from './JoshContainer.js';
 import FaqContainer from './FaqContainer.js';
+import Footer from '../Footer/Footer.js';
 
 const MainLandingPage = () => {
 
@@ -28,6 +29,7 @@ const MainLandingPage = () => {
     <Element name='faq'>
         <FaqContainer/>
     </Element>
+    <Footer/>
     </div>
   )
 }

@@ -58,7 +58,8 @@
 }
 
 .reviews-footer a:hover {
-  text-decoration: underline; 
+  text-decoration: none; 
+  color: white
 }
 
 @media (max-width: 768px) {

@@ -1,8 +1,47 @@
-import React from 'react';
+import React, { useState} from 'react';
 import { Button, Form } from 'react-bootstrap';
 import './QuoteForm.css';
+import axios from 'axios';
 
 const QuoteForm = ({ onSubmit }) => {
+
+  const [ file, setFile ] = useState(null);
+  const [ progress, setProgress ] = useState({started: false, pc: 0});
+  const [ msg, setMsg ] = useState(null);
+
+  function handleUpload(){
+    if (!file) {
+      setMsg('No file selected');
+      return;
+    }
+
+    const formData = new FormData();
+    formData.append('file', file);
+
+    setMsg("Uploading file...")
+    setProgress(preState => {
+      return {...preState, started: true}
+    })
+    axios.post('https://api.web3forms.com/upload', formData, {
+      onUploadProgress: (progressEvent) => { setProgress(preState => {
+        return {...preState, pc: progressEvent.progress*100}
+      } ) },
+      headers: {
+        "Custom-Header": "value",
+  }
+})
+
+  .then(response => {
+   setMsg("Upload Successful");
+    console.log(response.data);
+   })
+  .catch(error =>  {
+    setMsg("Upload Failed");
+    console.log(error);
+    });
+  }
+
+
   return (
     <div className='quote-container pt-5'>
       <h2>Get Your Free Quote Today!</h2>
@@ -64,12 +103,13 @@ const QuoteForm = ({ onSubmit }) => {
         <b>Upload images of your wheels (Maximum 8 images). Max image size 4mb. Allowed file types: .jpeg/.gif/.png/.pdf </b>
         </p>
         <Form.Group controlId="formChooseAFile" className='form-item file col-lg-6'>
-        <input type="file" id="attachment" name="attachment" accept="image/jpeg,image/png" className='file' required />
-            </Form.Group>
+        <input onChange={(e) => setFile(e.target.files[0])} type="file"  className='file' required />
+        <Button onClick={ handleUpload} className='quote-button'>Upload</Button>
 
-        <Button  className='quote-button' variant="primary" type="submit">
-          Submit Enquiry
-        </Button>
+        { progress.started && <progress max="100" value={progress.pc}></progress> }
+        { msg && <span>{msg}</span> }
+            </Form.Group>
+        
       </Form>
     </div>
   );

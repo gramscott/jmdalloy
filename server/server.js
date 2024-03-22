@@ -1,17 +1,16 @@
 const express = require('express');
-const app = express();
-const port = 3001;
-const cors = require('cors');
 const multer = require('multer');
+const nodemailer = require('nodemailer');
+const app = express();
+const PORT = process.env.PORT || 3001;
 
-app.use(cors());
 
 const storage = multer.diskStorage({
     destination: function(req, file, cb) {
         cb(null, 'uploads/');
     },
     filename: function(req, file, cb) {
-        cb(null, file.fieldname + '-' + Date.now() + '-' + file.originalname);
+        cb(null, file.fieldname + '-' + Date.now() + '-' + file.originalname.split(' ').pop())
     }
     });
 

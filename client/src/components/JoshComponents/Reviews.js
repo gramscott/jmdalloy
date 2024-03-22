@@ -52,7 +52,7 @@ const Reviews = () => {
       </div>
 
 <p className="reviews-footer">
-        Want to read more? Check out <a href="https://www.facebook.com/profile.php?id=100087670551689&sk=reviews" target="_blank" rel="noopener noreferrer">Facebook</a> and <a href="https://www.google.com/search?q=jmd+alloys" target="_blank" rel="noopener noreferrer">Google</a>.
+        Want to read more? Check out <a href="https://www.facebook.com/profile.php?id=100087670551689&sk=reviews" target="_blank" rel="noopener noreferrer">Facebook</a> and <a href="https://www.google.com/maps/place/JMD+Alloys/@57.7469948,-4.6873411,6z/data=!3m1!4b1!4m6!3m5!1s0xadba8358f55550d7:0x88ea712b68fca688!8m2!3d57.7469948!4d-4.6873412!16s%2Fg%2F11kb8z2jxp?entry=ttu" target="_blank" rel="noopener noreferrer">Google</a>.
       </p>
       </div>
 

@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const multer = require('multer');
 const nodemailer = require('nodemailer');
@@ -7,7 +9,6 @@ const PORT = process.env.PORT || 3001;
 const cors = require('cors');
 app.use(cors());
 
-// Storage configuration
 const storage = multer.diskStorage({
     destination: function(req, file, cb) {
         cb(null, 'uploads/');
@@ -19,35 +20,32 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage });
 
-// Email transporter configuration
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'graemesco96@gmail.com',
-        pass: 'password', // Be cautious with storing plaintext passwords, consider using environment variables or other secure methods
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
     }
 });
 
-// File upload route
+
 app.post('/upload', upload.single('file'), (req, res) => {
     if (!req.file) {
         return res.status(400).json({ message: 'No file uploaded' });
     }
 
-    // Define mail options inside the route handler
     const mailOptions = {
-        from: 'graemesco96@gmail.com',
+        from:  process.env.EMAIL_USER,
         to: 'recipient_email@example.com',
         subject: 'File Upload',
         text: 'A file has been uploaded.',
         attachments: [
             {
-                path: req.file.path // Use req.file.path to get the file path
+                path: req.file.path 
             }
         ]
     };
 
-    // Send email inside the route handler
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
             console.log(error);
@@ -59,7 +57,7 @@ app.post('/upload', upload.single('file'), (req, res) => {
     });
 });
 
-// Server start
+
 app.listen(PORT, () => {
     console.log(`Server listening at http://localhost:${PORT}`);
 });

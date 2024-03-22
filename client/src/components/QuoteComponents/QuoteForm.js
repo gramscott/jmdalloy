@@ -44,7 +44,6 @@ const QuoteForm = ({ onSubmit }) => {
 
   }
 
-
   return (
     <div className='quote-container pt-5'>
       <h2>Get Your Free Quote Today!</h2>

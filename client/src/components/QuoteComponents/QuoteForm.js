@@ -22,23 +22,26 @@ const QuoteForm = ({ onSubmit }) => {
     setProgress(preState => {
       return {...preState, started: true}
     })
-    axios.post('https://api.web3forms.com/upload', formData, {
-      onUploadProgress: (progressEvent) => { setProgress(preState => {
-        return {...preState, pc: progressEvent.progress*100}
-      } ) },
-      headers: {
-        "Custom-Header": "value",
+    axios.post('http://localhost:3001/upload', formData, {
+  onUploadProgress: (progressEvent) => {
+    setProgress(preState => ({
+      ...preState,
+      pc: Math.round((progressEvent.loaded * 100) / progressEvent.total)
+    }));
+  },
+  headers: {
+    "Content-Type": "multipart/form-data"
   }
 })
+.then(response => {
+  setMsg("Upload Successful");
+  console.log(response.data);
+})
+.catch(error => {
+  setMsg("Upload Failed");
+  console.log(error);
+});
 
-  .then(response => {
-   setMsg("Upload Successful");
-    console.log(response.data);
-   })
-  .catch(error =>  {
-    setMsg("Upload Failed");
-    console.log(error);
-    });
   }
 
 

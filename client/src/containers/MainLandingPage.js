@@ -4,7 +4,7 @@ import ServicesContainer from './ServicesContainer';
 import QuoteContainer from './QuoteContainer';
 import { Element } from 'react-scroll';
 import NavBar from '../NavBar/NavBar.js';
-import JoshContainer from './JoshContainer.js';
+import ReviewContainer from './ReviewContainer.js';
 import FaqContainer from './FaqContainer.js';
 import Footer from '../Footer/Footer.js';
 
@@ -23,8 +23,8 @@ const MainLandingPage = () => {
     <Element name='quote'>
         <QuoteContainer/>
     </Element>
-    <Element name='about-josh'>
-        <JoshContainer/>
+    <Element name='testimonials'>
+        <ReviewContainer/>
     </Element>
     <Element name='faq'>
         <FaqContainer/>

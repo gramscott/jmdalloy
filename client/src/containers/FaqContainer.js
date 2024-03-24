@@ -7,7 +7,7 @@ const FaqContainer = () => {
     const questionsAndAnswers = [
         {
             question: "How long will the refurbishment take?",
-            answer: "The refurbishment process can take between 2-3 days, depending on the level of damage and the type of finish you require."
+            answer: "In most cases, refurbishment can be completed the same day. However, depending on the damage and the finish you require, it may take longer."
         },
         {
             question : "Do you remove the scratches from my wheels?",
@@ -15,15 +15,15 @@ const FaqContainer = () => {
         }, 
         {
             question: "Do you offer blow in services?",
-            answer: "Yes, we offer blow in services for minor damage."
+            answer: "No, we don’t offer this service, sorry."
         },
         {
             question: "Do you offer a payment plan?",
-            answer: "Yes, we offer a payment plan for all our customers."
+            answer: "Yes, you can spread the cost of the work over 3 months interest-free. For example, a £300 job requires a £100 deposit followed by 2 monthly payments of £100."
         },
         {
             question: "Will I have to pay a deposit?",
-            answer: "Yes, we require a deposit to secure your booking. The deposit will be deducted from the final cost of the refurbishment."
+            answer: "No deposit is required."
         }
     ];
 

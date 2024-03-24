@@ -18,7 +18,8 @@ const ServiceList = ( {serviceData }) => {
     </div>
     <div className='service-list'>
     {secondRowServices.map(service => (
-      <ServiceItem key={service.id} service={service} />
+      <ServiceItem key={service.id} service={service}
+      />
     ))}
     </div>
     </div>

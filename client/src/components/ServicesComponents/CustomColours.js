@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './NextPageServiceStyles.css';
+import customColoursVideo from '../../images/custom_colours_video.mp4';
 
 
 const CustomColours = () => {
@@ -31,11 +32,11 @@ const CustomColours = () => {
   return (
 
     <div className='next-page-service-container'>
-    <Slider {...settings} ref={sliderRef}>
-    <div className="next-page-service-slides">
-        <img src='https://res.cloudinary.com/dk4rjadwm/image/upload/v1631970282/colour_change_main_pic_2_ggk8qy.jpg' alt='Custom colour' />
-    </div>
+    <div {...settings} ref={sliderRef}>
+    <Slider className="next-page-service-slides">
+        <video src={customColoursVideo} autoPlay loop muted />
     </Slider>
+    </div>
 
     <div className="button-navigation">
     <button className="prev-button" onClick={goToPrevSlide}>Previous</button>

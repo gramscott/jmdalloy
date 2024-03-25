@@ -33,15 +33,16 @@ const CustomColours = () => {
 
     <div className='next-page-service-container'>
     <div {...settings} ref={sliderRef}>
-    <Slider className="next-page-service-slides">
+    <video src={customColoursVideo} autoPlay loop muted />
+    {/* <Slider className="next-page-service-slides">
         <video src={customColoursVideo} autoPlay loop muted />
-    </Slider>
+    </Slider> */}
     </div>
 
-    <div className="button-navigation">
+    {/* <div className="button-navigation">
     <button className="prev-button" onClick={goToPrevSlide}>Previous</button>
-    <button className="next-button" onClick={goToNextSlide} >Next</button>
-    </div>
+    <button className="next-button" onClick={goToNextSlide} >Next</button> */}
+    {/* </div> */}
 
 
     <div className="next-page-service-info-container">

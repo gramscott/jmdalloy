@@ -44,14 +44,14 @@
     margin: 15px auto; 
   }
 
-  .next-page-service-slides video {
+  .next-page-service-container video {
     width: 100%;
     max-width: 550px; 
     height: auto; 
     max-height: 550px;
     object-fit: cover; 
     border-radius: 10px;
-    margin: 15px auto;
+    margin: 15px auto; 
   }
 
 
@@ -70,7 +70,7 @@
         border-radius: 10px;
         margin: 15px auto;
       }
-      .next-page-service-slides video {
+      .next-page-service-container video  {
         width: 100%;
         max-width: 100%; 
         height: auto;

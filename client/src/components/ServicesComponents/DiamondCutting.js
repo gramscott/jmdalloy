@@ -6,6 +6,7 @@ import './NextPageServiceStyles.css';
 import diamondCuttingMainPic from '../../images/diamond_cutting_main_pic.jpg';
 import diamondCutting2 from '../../images/diamond_cutting2.jpg';
 import diamondCutting3 from '../../images/diamond_cutting3.jpg';
+import diamondCutting4 from '../../images/diamond_cutting4.jpeg';
 
 const DiamondCutting = () => {
 
@@ -41,6 +42,9 @@ const DiamondCutting = () => {
         </div>
         <div className="next-page-service-slides">
             <img src={diamondCutting3} alt='Diamond Cutting 3' />
+        </div>
+        <div className="next-page-service-slides">
+            <img src={diamondCutting4} alt='Diamond Cutting 4' />
         </div>
         </Slider>
         <div className="button-navigation">

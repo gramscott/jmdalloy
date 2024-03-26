@@ -1,21 +1,31 @@
 .footer {
-    padding: 20px 0;
-    text-align: center;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    color: white;
+    color: #ffffff;
+    padding: 20px;
+    border: none;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto 0 auto;
+    flex-direction: row; 
+    gap: 5px;
 }
 
 .footer a {
-    color: orangered;
+    color: orangered; 
     text-decoration: none;
+    font-weight: 600; 
 }
 
 .footer a:hover {
+    color: #ffffff;
     text-decoration: none;
-    color: white;
-;
 }
+
+@media (max-width: 600px) {
+    .footer {
+        flex-direction: column; 
+        padding: 20px;
+    }
+}
+

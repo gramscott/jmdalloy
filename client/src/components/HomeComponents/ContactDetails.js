@@ -50,7 +50,6 @@ const ContactDetails = () => {
         <b>Saturday-Sunday: Closed</b>
       </div>
     </div>
-    <hr></hr>
   </div>
   
   

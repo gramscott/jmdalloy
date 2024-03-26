@@ -16,6 +16,16 @@
   backdrop-filter: blur(10px);
 }
 
+.quote-container img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 15px auto;
+}
+
 .quote-title {
   margin-bottom: 1rem;
 }

@@ -1,4 +1,4 @@
-import React, { useRef  } from 'react';
+import React, { useRef, useState } from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -7,53 +7,63 @@ import AlloyWheelRefurbishment1 from '../../images/alloy_wheel_ref_pic.JPG';
 import AlloyWheelRefurbishment3 from '../../images/alloy_wheel_ref_3.jpg';
 import AlloyWheelRefurbishment4 from '../../images/alloy_wheel_ref_4.jpg';
 
+const AlloyWheelRefurbishment = () => { 
 
-const AlloyWheelRefurbishment = () => {
-
-  const sliderRef = useRef(null); 
+  const sliderRef = useRef(null);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [slideCount, setSlideCount] = useState(0);
 
   const settings = {
-    dots: false, 
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
-    arrows: false
-    
-  };
+    arrows: false,
+    afterChange: (current) => setCurrentSlide(current),
+    onInit: () => {
+      if (sliderRef.current) {
+          setSlideCount(sliderRef.current.props.children.length);
+      }
+  }
+};
+
 
   const goToNextSlide = () => {
-    sliderRef.current.slickNext(); 
+    if (sliderRef.current) { 
+      sliderRef.current.slickNext();
+    }
   };
 
   const goToPrevSlide = () => {
-    sliderRef.current.slickPrev();
+    if (sliderRef.current) { 
+      sliderRef.current.slickPrev();
+    }
   };
-
 
   return (
     <div className='next-page-service-container'>
        <Slider {...settings} ref={sliderRef}>
-       <div className="next-page-service-slides">
-        <img src={AlloyWheelRefurbishment1} alt="pic-1" className="img-fluid" />
-        </div>
+         <div className="next-page-service-slides">
+           <img src={AlloyWheelRefurbishment1} alt="pic-1" className="img-fluid" />
+         </div>
+         <div className="next-page-service-slides">
+           <img src={AlloyWheelRefurbishment3} alt="pic-2" className="img-fluid"/>
+         </div>
+         <div className="next-page-service-slides">
+           <img src={AlloyWheelRefurbishment4} alt="pic-3" className="img-fluid" /> 
+         </div>
+       </Slider>
 
-         
-        <div className="next-page-service-slides">
-        <img src={AlloyWheelRefurbishment3} alt="pic-1" className="img-fluid"/>
-        </div>
-
-        <div className="next-page-service-slides">
-        <img src={AlloyWheelRefurbishment4} alt="pic-3" className="img-fluid" /> 
-      
+      <div className="button-navigation">
+        {currentSlide > 0 && (
+          <button className="prev-button" onClick={goToPrevSlide}>Previous</button>
+        )}
+        {currentSlide < slideCount - 1 && (
+          <button className="next-button" onClick={goToNextSlide}>Next</button>
+        )}
       </div>
-     </Slider>
-
-     <div className="button-navigation">
-    <button className="prev-button" onClick={goToPrevSlide}>Previous</button>
-    <button className="next-button" onClick={goToNextSlide} >Next</button>
-    </div>
 
 
       <div className="next-page-service-info-container">

@@ -1,0 +1,66 @@
+.quote-container {
+  max-width: 1500px;
+  margin: 50px auto;
+  padding: 3%;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+.quote-title {
+  margin-bottom: 1rem;
+}
+
+.quote-link {
+  display: inline-flex;
+  margin: 10px;
+  background-color: orangered;
+  border: none; 
+  border-radius: 5px;
+  font-style: normal;
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.quote-link:hover {
+  color: white;
+}
+
+.email-icon {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+.quote-instruction {
+  font-style: italic;
+  font-size: 1rem;
+  font-weight: normal;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .quote-container {
+    padding: 3% 5%;
+  }
+
+  .quote-container, .quote-container a {
+    font-size: smaller;
+  }
+}
+
+@media (max-width: 480px) {
+  .quote-container, .quote-container a {
+    font-size: smallest;
+  }
+}

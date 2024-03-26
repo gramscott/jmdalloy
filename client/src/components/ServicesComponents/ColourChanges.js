@@ -3,8 +3,8 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './NextPageServiceStyles.css';
-import colourChangesMainPic from '../../images/colour_change_main_pic.jpg';
-import colourChanges2 from '../../images/colour_change2.jpg';
+import colourChanges2 from '../../images/colour_change2.jpeg';
+import colourChange3 from '../../images/colour_change3.jpg';
 
 const ColourChanges = () => {
 
@@ -35,10 +35,11 @@ const ColourChanges = () => {
     <Slider {...settings} ref={sliderRef}>
     <div className="next-page-service-slides">
         <img src={colourChanges2} alt='Colour Change 2' />
-      </div>
+      </div> 
       <div className="next-page-service-slides">
-        <img src={colourChangesMainPic} alt='Colour Change' />
+        <img src={colourChange3} alt='Colour Change 3' /> 
       </div>
+     
 
       </Slider>
       <div className="button-navigation">

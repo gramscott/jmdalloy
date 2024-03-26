@@ -1,6 +1,8 @@
 import React from 'react'
 import './ContactDetails.css'
-import { Telephone, Envelope, Instagram, Facebook } from 'react-bootstrap-icons'
+import { Telephone,  Instagram, Facebook } from 'react-bootstrap-icons'
+import { FaEnvelope } from 'react-icons/fa'; 
+
 
 const ContactDetails = () => {
   return (
@@ -15,7 +17,7 @@ const ContactDetails = () => {
       <div class='contact-item'>
         <b>
           <a href="mailto:jmdalloyrepairs@gmail.com">
-            <Envelope size={25} className='icon-spacing'/>
+            <FaEnvelope size={25} className='icon-spacing'/>
             jmdalloyrepairs@gmail.com
           </a>
         </b>

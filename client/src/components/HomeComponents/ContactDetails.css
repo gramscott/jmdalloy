@@ -13,10 +13,12 @@
 }
 
 .contact-item {
+  display: inline-flex;
   margin: 10px;
   background-color: orangered;
-  border: 2px solid orangered;
+  border: none; 
   border-radius: 5px;
+  font-style: normal;
   text-decoration: none;
   padding: 10px;
   color: black;

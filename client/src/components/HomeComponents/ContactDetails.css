@@ -1,51 +1,92 @@
 .contact-wrapper {
- flex-direction: column;
-  font-family: 'Arial', sans-serif;
-   margin-bottom: 10px;
-  padding: 10px;
-  padding-bottom: 50px;
+  max-width: 1500px;
+  width: 100%;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  font-style: italic;
+  color: white;
+  font-weight: bold;
+  overflow: hidden;
+  gap: 20px; 
 }
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.contact-section {
+  flex: 1; /* Allows sections to grow equally */
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    width: 100%; 
+  }
+
+  .contact-wrapper {
+    margin: 20px auto; 
+    padding: 10px; 
+  }
+
+  
+  .contact-item, .contact-item b {
+    font-size: 0.9rem; 
+  }
+}
+
 
 .contact-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content:space-evenly;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+flex-wrap: wrap;
 }
 
+
 .contact-item {
-  display: inline-flex;
-  margin: 10px;
+  display: flex;
+  align-items: center;
+  margin: 15px 0; 
   background-color: orangered;
-  border: none; 
   border-radius: 5px;
-  font-style: normal;
-  text-decoration: none;
-  padding: 10px;
+  padding: 15px;
   color: black;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .contact-item:hover {
-  color: white;
+transform: translateY(-2px); 
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+color: white;
 }
 
 .contact-item a {
-  color: black;
+  color: inherit;
   text-decoration: none;
-}
-
-.contact-item:hover a {
-  color: white; 
+  transition: color 0.2s; 
 }
 
 .icon-spacing {
-  margin-right: 5px;
-} 
-
-
+margin-right: 10px;
+}
 @media (max-width: 768px) {
   .contact-wrapper {
-    padding-bottom: 0;
+    flex-direction: column;
+    margin: 20px auto;
+    padding: 10px;
   }
-  
+
+  .contact-section {
+    width: 100%;
+  }
+
+  .contact-item, .contact-item b {
+    font-size: 0.9rem;
+  }
 }

@@ -12,7 +12,7 @@ const About = () => {
         Our services include <strong>alloy wheel refurbishments, brake caliper resprays, colour changes, custom colours and diamond cutting.</strong>
       </p>
       <p>
-        Interested in our services? <strong>Give Josh a call today</strong> using the contact information below.
+        Interested in our services? <strong>Contact Josh today</strong> using any of the contact information below.
       </p>
     </section>
   );

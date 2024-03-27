@@ -6,14 +6,18 @@
   border-radius: 50px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-style: italic;
   color: white;
   font-weight: bold;
-  text-align: center;
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
+}
+
+.josh-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
 }
 
 .quote-container img {
@@ -57,6 +61,11 @@
   font-size: 1rem;
   font-weight: normal;
   margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  justify-content: right;
+
 }
 
 @media (max-width: 768px) {

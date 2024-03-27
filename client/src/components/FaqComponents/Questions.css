@@ -42,8 +42,9 @@
   }
   
   .faq-question:hover {
-    color: white;
-  }
+    text-decoration: none; 
+    color: white 
+   }
   
   .faq-answer {
     background-color: white;

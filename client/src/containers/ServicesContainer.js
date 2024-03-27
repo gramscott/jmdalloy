@@ -6,6 +6,13 @@ import colourChanges2 from '../images/colour_change2.jpeg'
 import customColoursVideo from '../images/custom_colours_video.mp4'
 import brakeCaliperMain from '../images/brake_caliper_main_pic.jpg'
 import SlideShow from '../components/ServicesComponents/SlideShow'
+import slideShow1 from '../images/slideshow1.jpeg'
+import slideShow2 from '../images/slideshow2.jpeg'
+import slideShow3 from '../images/slideshow3.jpeg'
+import slideShow4 from '../images/slideshow4.jpeg'
+import slideShow5 from '../images/slideshow5.jpeg'
+import slideShow6 from '../images/slideshow6.jpeg'
+import slideShow7 from '../images/slideshow7.jpeg'
 
 const ServicesContainer = () => {
 
@@ -62,26 +69,38 @@ const ServicesContainer = () => {
 
     {
       id: 1,
-      image: diamondCuttingMainPic,
-      alt: 'Diamond Cutting',
+      image: slideShow1,
+      alt: 'slide 1'
     },
-
     {
       id: 2,
-      image: brakeCaliperMain,
-      alt: 'Brake Caliper Resprays',
+      image: slideShow2,
+      alt: 'slide 2'
     },
-
     {
       id: 3,
-      image: colourChanges2,
-      alt: 'Colour Changes',
+      image: slideShow3,
+      alt: 'slide 3'
     },
-
     {
       id: 4,
-      image: alloyWheelMainPic,
-      alt: 'Alloy Wheel Refurbishment',
+      image: slideShow4,
+      alt: 'slide 4'
+    },
+    {
+      id: 5,
+      image: slideShow5,
+      alt: 'slide 5'
+    }, 
+    {
+      id: 6,
+      image: slideShow6,
+      alt: 'slide 6'
+    },
+    {
+      id: 7,
+      image: slideShow7,
+      alt: 'slide 7'
     }
   ]
 

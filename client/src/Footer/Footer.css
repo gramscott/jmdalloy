@@ -8,6 +8,7 @@
     justify-content: center;
     margin: 40px auto 0 auto;
     flex-direction: row; 
+    font-style: italic;
     gap: 5px;
 }
 

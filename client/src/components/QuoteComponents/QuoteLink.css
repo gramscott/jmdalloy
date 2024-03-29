@@ -21,9 +21,7 @@
 }
 
 .quote-container img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
+  width: 200px;
   max-height: 300px;
   object-fit: cover;
   border-radius: 10px;

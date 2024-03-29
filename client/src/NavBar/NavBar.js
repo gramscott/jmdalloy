@@ -16,7 +16,7 @@ const NavBar = () => {
     <nav className="nav navbar-expand-lg">
       <div className="container-fluid">
         <button className='burger' onClick={toggleNav} aria-label={isNavExpanded ? "Close Menu" : "Open Menu"}>
-          {isNavExpanded ? <FaTimes /> : <FaBars />}
+          {isNavExpanded ? <FaTimes color='black' /> : <FaBars color='black'/>}
         </button>
 
         <div className="logo-container">

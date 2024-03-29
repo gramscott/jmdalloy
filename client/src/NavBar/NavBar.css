@@ -9,10 +9,16 @@
   max-width: 100%;
 }
 
+
 .logo {
-  width: 400px;
+  width: 400px; 
   height: 350px;
+  transition: transform 0.3s ease, border 0.3s ease;
   box-sizing: border-box;
+}
+
+.logo:hover {
+  transform: scale(1.1);
 }
 
 nav {
@@ -47,15 +53,16 @@ nav .nav-item .nav-link {
   background-color: orangered;
   font-size: 24px; 
   border-radius: 5px;
-}
+} 
+
 
 @media (max-width: 768px) {
   .burger {
     display: block;
-    
   }
 
-  .nav-menu {
+  .nav-menu,
+  .nav-menu-expanded {
     display: none;
     width: 100%;
     text-align: center;
@@ -64,10 +71,8 @@ nav .nav-item .nav-link {
   .nav-menu-expanded {
     display: block;
   }
-
   .nav {
     flex-direction: column;
-
   }
 
   nav .nav-item .nav-link:hover {
@@ -76,6 +81,6 @@ nav .nav-item .nav-link {
 
   .nav-item {
     margin: 10px 0; 
-
   }
- }
+
+}

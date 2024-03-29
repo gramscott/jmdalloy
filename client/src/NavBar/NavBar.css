@@ -13,13 +13,10 @@
 .logo {
   width: 400px; 
   height: 350px;
-  transition: transform 0.3s ease, border 0.3s ease;
   box-sizing: border-box;
 }
 
-.logo:hover {
-  transform: scale(1.1);
-}
+
 
 nav {
   position: -webkit-sticky;
@@ -81,6 +78,11 @@ nav .nav-item .nav-link {
 
   .nav-item {
     margin: 10px 0; 
+  }
+
+  .logo {
+    width: 300px; 
+    height: 300px;
   }
 
 }

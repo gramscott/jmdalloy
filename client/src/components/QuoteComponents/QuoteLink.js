@@ -14,7 +14,6 @@ const QuoteLink = () => {
         <img src={joshPic} alt='Josh' className='josh-image'/>
       </div>
       <div className='quote-instruction-container'>
-      <div className='col-lg-6'>
       <a href='mailto:jmdalloyrepairs@gmail.com' className='quote-link'>
         <FaEnvelope className='email-icon'/> 
         Click here and send us an email with your requirements! 
@@ -22,7 +21,6 @@ const QuoteLink = () => {
       <p className='quote-instruction'>
         Josh will get back to you as soon as possible.
       </p>
-      </div>
       </div>
     </div>
   );

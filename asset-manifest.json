@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Jmd_Alloy/static/css/main.d4f330f2.css",
-    "main.js": "/Jmd_Alloy/static/js/main.4f473695.js",
+    "main.css": "/Jmd_Alloy/static/css/main.a6fa3f9c.css",
+    "main.js": "/Jmd_Alloy/static/js/main.b571ad41.js",
     "static/js/592.acd9a8a8.chunk.js": "/Jmd_Alloy/static/js/592.acd9a8a8.chunk.js",
     "static/media/black_and_white_alloy.mp4": "/Jmd_Alloy/static/media/black_and_white_alloy.cb716326ce4ca186e3c2.mp4",
     "static/media/custom_colours_video.mp4": "/Jmd_Alloy/static/media/custom_colours_video.465d3232f16a5865c7f7.mp4",
@@ -21,23 +21,23 @@
     "static/media/diamond_cutting2.jpg": "/Jmd_Alloy/static/media/diamond_cutting2.cdc608a717c65cd5f026.jpg",
     "static/media/slideshow7.jpeg": "/Jmd_Alloy/static/media/slideshow7.39c53192fa4b64063a27.jpeg",
     "static/media/alloy_wheel_ref_pic.JPG": "/Jmd_Alloy/static/media/alloy_wheel_ref_pic.70b2c0b72f9f6da56e33.JPG",
-    "static/media/josh.jpg": "/Jmd_Alloy/static/media/josh.4b919fa90f2fac4e635e.jpg",
     "static/media/brake_caliper_main_pic.jpg": "/Jmd_Alloy/static/media/brake_caliper_main_pic.9422682e31f35b72a64d.jpg",
     "static/media/diamond_cutting3.jpg": "/Jmd_Alloy/static/media/diamond_cutting3.63d091417cb7e560a534.jpg",
     "static/media/alloy_wheel_ref_4.jpg": "/Jmd_Alloy/static/media/alloy_wheel_ref_4.874bc83abd05d65ea46b.jpg",
     "static/media/alloy_wheel_ref_3.jpg": "/Jmd_Alloy/static/media/alloy_wheel_ref_3.a423c86ed56bcdb80d4d.jpg",
+    "static/media/josh.jpg": "/Jmd_Alloy/static/media/josh.1e520f3bf929dc58ca68.jpg",
     "static/media/JMD_Alloys_logo.jpg": "/Jmd_Alloy/static/media/JMD_Alloys_logo.778ddae480a8203ed54d.jpg",
     "static/media/slick.svg": "/Jmd_Alloy/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/Jmd_Alloy/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/Jmd_Alloy/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Jmd_Alloy/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Jmd_Alloy/index.html",
-    "main.d4f330f2.css.map": "/Jmd_Alloy/static/css/main.d4f330f2.css.map",
-    "main.4f473695.js.map": "/Jmd_Alloy/static/js/main.4f473695.js.map",
+    "main.a6fa3f9c.css.map": "/Jmd_Alloy/static/css/main.a6fa3f9c.css.map",
+    "main.b571ad41.js.map": "/Jmd_Alloy/static/js/main.b571ad41.js.map",
     "592.acd9a8a8.chunk.js.map": "/Jmd_Alloy/static/js/592.acd9a8a8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d4f330f2.css",
-    "static/js/main.4f473695.js"
+    "static/css/main.a6fa3f9c.css",
+    "static/js/main.b571ad41.js"
   ]
 }

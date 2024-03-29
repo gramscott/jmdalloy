@@ -1,6 +1,4 @@
-
 {
-  "homepage": "https://jmdalloy.com",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
@@ -16,9 +14,5 @@
   },
   "devDependencies": {
     "gh-pages": "^6.1.1"
-  }, 
-  "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-  }
+  },
 }

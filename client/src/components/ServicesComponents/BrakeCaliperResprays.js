@@ -86,7 +86,7 @@ const goToPrevSlide = () => {
         <li className='process'>Decals added if desired</li>
         <li className='process'>Heat resistant lacquer is applied for shine and protection</li>
         </ol>
-        <a href='/' className='home-button'>Home</a>
+        <a href='/Jmd_Alloy' className='home-button'>Home</a>
 
         </div>
 

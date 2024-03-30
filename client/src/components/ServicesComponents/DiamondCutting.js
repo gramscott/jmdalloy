@@ -73,7 +73,7 @@ const goToPrevSlide = () => {
             </p>
             <p className='pb-4'>
             An <strong>anti corrosive lacquer</strong> is applied followed by a <strong>high quality clear coat</strong> to preserve your alloys for longer.</p>
-            <a href='/' className='home-button'>Home</a>
+            <a href='/Jmd_Alloy' className='home-button'>Home</a>
             </div>
     </div>
   )

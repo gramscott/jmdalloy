@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/jmdalloy/static/css/main.0eb2e486.css",
-    "main.js": "/jmdalloy/static/js/main.c5f7eb5e.js",
+    "main.js": "/jmdalloy/static/js/main.cbfa6d61.js",
     "static/js/592.acd9a8a8.chunk.js": "/jmdalloy/static/js/592.acd9a8a8.chunk.js",
     "static/media/black_and_white_alloy.mp4": "/jmdalloy/static/media/black_and_white_alloy.cb716326ce4ca186e3c2.mp4",
     "static/media/custom_colours_video.mp4": "/jmdalloy/static/media/custom_colours_video.465d3232f16a5865c7f7.mp4",
@@ -21,11 +21,11 @@
     "static/media/diamond_cutting2.jpg": "/jmdalloy/static/media/diamond_cutting2.cdc608a717c65cd5f026.jpg",
     "static/media/slideshow7.jpeg": "/jmdalloy/static/media/slideshow7.39c53192fa4b64063a27.jpeg",
     "static/media/alloy_wheel_ref_pic.JPG": "/jmdalloy/static/media/alloy_wheel_ref_pic.70b2c0b72f9f6da56e33.JPG",
-    "static/media/JMD_Alloys_logo.jpg": "/jmdalloy/static/media/JMD_Alloys_logo.248f7c4500fd8162926b.jpg",
     "static/media/brake_caliper_main_pic.jpg": "/jmdalloy/static/media/brake_caliper_main_pic.9422682e31f35b72a64d.jpg",
     "static/media/diamond_cutting3.jpg": "/jmdalloy/static/media/diamond_cutting3.63d091417cb7e560a534.jpg",
     "static/media/alloy_wheel_ref_4.jpg": "/jmdalloy/static/media/alloy_wheel_ref_4.874bc83abd05d65ea46b.jpg",
     "static/media/alloy_wheel_ref_3.jpg": "/jmdalloy/static/media/alloy_wheel_ref_3.a423c86ed56bcdb80d4d.jpg",
+    "static/media/JMD_Alloys_logo.jpg": "/jmdalloy/static/media/JMD_Alloys_logo.f3c831f02af41e1ceb67.jpg",
     "static/media/josh.jpg": "/jmdalloy/static/media/josh.1e520f3bf929dc58ca68.jpg",
     "static/media/slick.svg": "/jmdalloy/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/jmdalloy/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -33,11 +33,11 @@
     "static/media/slick.woff": "/jmdalloy/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/jmdalloy/index.html",
     "main.0eb2e486.css.map": "/jmdalloy/static/css/main.0eb2e486.css.map",
-    "main.c5f7eb5e.js.map": "/jmdalloy/static/js/main.c5f7eb5e.js.map",
+    "main.cbfa6d61.js.map": "/jmdalloy/static/js/main.cbfa6d61.js.map",
     "592.acd9a8a8.chunk.js.map": "/jmdalloy/static/js/592.acd9a8a8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0eb2e486.css",
-    "static/js/main.c5f7eb5e.js"
+    "static/js/main.cbfa6d61.js"
   ]
 }

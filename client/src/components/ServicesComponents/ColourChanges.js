@@ -65,7 +65,7 @@ const goToPrevSlide = () => {
     <div className="next-page-service-info-container">
         <h2>Colour Changes</h2>
         <p className='pb-4'>We provide an <strong>alloy wheel colour change service</strong> that can <strong>completely transform</strong> the look of your alloys. <strong>Rather than investing in a new set of alloys</strong>, transform your current ones with a respray and give them a <strong>new lease of life</strong>.</p>
-        <a href='/Jmd_Alloy' className='home-button'>Home</a>
+        <a href='/jmdalloy' className='home-button'>Home</a>
         </div>
     </div>
 

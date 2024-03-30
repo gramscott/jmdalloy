@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import ServiceList from '../components/ServicesComponents/ServiceList'
 import alloyWheelMainPic from '../images/alloy_wheel_ref_pic.JPG'
 import diamondCuttingMainPic from '../images/diamond_cutting_main_pic.jpg'
@@ -15,6 +15,16 @@ import slideShow6 from '../images/slideshow6.jpeg'
 import slideShow7 from '../images/slideshow7.jpeg'
 
 const ServicesContainer = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const serviceData = [
 
@@ -108,7 +118,7 @@ const ServicesContainer = () => {
   return (
 
     <div name='services'>
-    <ServiceList  serviceData={serviceData}/>
+    <ServiceList  serviceData={serviceData} isMobile={isMobile} />
     <SlideShow slideshowData={slideshowData}/>
     </div>
 

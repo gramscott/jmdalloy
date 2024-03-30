@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useRef, useEffect} from 'react'
 import ServiceList from '../components/ServicesComponents/ServiceList'
 import alloyWheelMainPic from '../images/alloy_wheel_ref_pic.JPG'
 import diamondCuttingMainPic from '../images/diamond_cutting_main_pic.jpg'
@@ -15,15 +15,22 @@ import slideShow6 from '../images/slideshow6.jpeg'
 import slideShow7 from '../images/slideshow7.jpeg'
 
 const ServicesContainer = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  const videoRef = useRef(null);
 
   useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
+    const videoElement = videoRef.current;
+    if (videoElement) {
+      const handleVideoEnd = () => {
+      videoElement.play();
     };
 
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    videoElement.addEventListener('ended', handleVideoEnd);
+
+    return () => {
+      videoElement.removeEventListener('ended', handleVideoEnd);
+    };
+    }
   }, []);
 
   const serviceData = [
@@ -118,7 +125,7 @@ const ServicesContainer = () => {
   return (
 
     <div name='services'>
-    <ServiceList  serviceData={serviceData} isMobile={isMobile} />
+    <ServiceList  serviceData={serviceData} ref={videoRef} />
     <SlideShow slideshowData={slideshowData}/>
     </div>
 

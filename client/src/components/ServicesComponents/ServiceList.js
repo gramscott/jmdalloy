@@ -1,7 +1,7 @@
 import ServiceItem from './ServiceItem'
 import './ServiceList.css'
 
-const ServiceList = ( {serviceData, isMobile }) => {
+const ServiceList = ( {serviceData}) => {
 
   const halfWayIndex = Math.ceil(serviceData.length / 2);
   const firstRowServices = serviceData.slice(0, halfWayIndex);
@@ -13,12 +13,12 @@ const ServiceList = ( {serviceData, isMobile }) => {
     <h2>Services</h2>
     <div className='service-list'>
     {firstRowServices.map(service => (
-      <ServiceItem key={service.id} service={service} isMobile={isMobile} />
+      <ServiceItem key={service.id} service={service}  />
     ))}
     </div>
     <div className='service-list'>
     {secondRowServices.map(service => (
-      <ServiceItem key={service.id} service={service} isMobile={isMobile}
+      <ServiceItem key={service.id} service={service} 
       />
     ))}
     </div>

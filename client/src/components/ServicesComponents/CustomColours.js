@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, forwardRef } from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -6,7 +6,8 @@ import './NextPageServiceStyles.css';
 import customColoursVideo from '../../images/custom_colours_video.mp4';
 
 
-const CustomColours = () => {
+const CustomColours = forwardRef((props, ref) => {
+
 
   const sliderRef = useRef(null); 
 
@@ -33,7 +34,7 @@ const CustomColours = () => {
 
     <div className='next-page-service-container'>
     <div {...settings} ref={sliderRef}>
-    <video src={customColoursVideo} autoPlay loop muted />
+    <video src={customColoursVideo} autoPlay loop muted playsInline ref={ref}/>
     {/* <Slider className="next-page-service-slides">
         <video src={customColoursVideo} autoPlay loop muted />
     </Slider> */}
@@ -59,7 +60,7 @@ const CustomColours = () => {
     
     </div>
 
-  )
-}
+  ) 
+})
 
 export default CustomColours

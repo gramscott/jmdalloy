@@ -8,12 +8,14 @@ import BrakeCaliperResprays from './components/ServicesComponents/BrakeCaliperRe
 import ColourChanges from './components/ServicesComponents/ColourChanges';
 import DiamondCutting from './components/ServicesComponents/DiamondCutting';
 import CustomColours from './components/ServicesComponents/CustomColours';
+import ScrollToTop from './components/ServicesComponents/ScrollToTop';
 
 
 
 function App() {
   return (
     <Router>
+    <ScrollToTop />
     <div className="App">
      <Routes>
         <Route path="/" element={<MainLandingPage />} />

@@ -12,6 +12,10 @@ const NavBar = () => {
     console.log('Is nav expanded:', !isNavExpanded); 
   };
 
+  const handleNavLinkClick = () => {
+    setIsNavExpanded(false);
+  };
+
   return (
     <nav className="nav navbar-expand-lg">
       <div className="container-fluid">
@@ -28,19 +32,19 @@ const NavBar = () => {
         <div className={`nav-menu ${isNavExpanded ? 'nav-menu-expanded' : ''}`}>
           <ul className="nav justify-content-center">
             <li className="nav-item">
-              <Link className='nav-link active' to="home" spy={true} smooth={true} offset={-70} duration={500}>Home</Link>
+              <Link className='nav-link active' to="home" spy={true} smooth={true} offset={-70} duration={500} onClick={handleNavLinkClick}>Home</Link>
             </li>
             <li className="nav-item">
-              <Link to="services" className='nav-link active' spy={true} smooth={true} offset={-70} duration={500}>Services</Link>
+              <Link to="services" className='nav-link active' spy={true} smooth={true} offset={-70} duration={500} onClick={handleNavLinkClick}>Services</Link>
             </li>
             <li className="nav-item">
-              <Link to="quote" className='nav-link active' spy={true} smooth={true} offset={-70} duration={500}>Quote</Link>
+              <Link to="quote" className='nav-link active' spy={true} smooth={true} offset={-70} duration={500} onClick={handleNavLinkClick}>Quote</Link>
             </li>
             <li className="nav-item">
-              <Link to='testimonials' className="nav-link active"  spy={true} smooth={true} offset={-70} duration={500}>Testimonials</Link>
+              <Link to='testimonials' className="nav-link active"  spy={true} smooth={true} offset={-70} duration={500} onClick={handleNavLinkClick}>Testimonials</Link>
             </li>
             <li className="nav-item">
-              <Link to='faq' className="nav-link active"  spy={true} smooth={true} offset={-70} duration={500}>Frequently Asked Questions</Link>
+              <Link to='faq' className="nav-link active"  spy={true} smooth={true} offset={-70} duration={500}onClick={handleNavLinkClick}>Frequently Asked Questions</Link>
             </li>
           </ul>
         </div>

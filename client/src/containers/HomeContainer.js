@@ -2,7 +2,6 @@ import React, { useEffect, useRef} from 'react'
 import About from '../components/HomeComponents/About'
 import ContactDetails from '../components/HomeComponents/ContactDetails'
 import HomeVideo from '../components/HomeComponents/HomeVideo'
-import { Element } from 'react-scroll';
 
 
 const HomeContainer = () => {
@@ -25,11 +24,11 @@ const HomeContainer = () => {
 
   return (
 
-    <Element name='home'>
+    <div>
       <HomeVideo ref={videoRef}/>
        <About/>
        <ContactDetails/>
-    </Element>
+    </div>
 
   )
 }

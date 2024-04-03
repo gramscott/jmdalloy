@@ -187,45 +187,18 @@
       padding: 0 20px;
     }
   
-    .slick-arrow {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 100;
-    }
-    
-    .slick-prev {
-      left: 25px;
-    }
-    
-    .slick-next {
-      right: 25px;
-    }
-    
-    .next-button, .prev-button {
-      border: none;
+    .prev-button, .next-button {
+      margin: 0;
       background-color: orangered;
-      color: white;
+      border: 2px solid orangered;
+      border-radius: 5px;
+      text-decoration: none;
       padding: 10px;
-      border-radius: 50%;
-      cursor: pointer;
-      font-size: 16px; 
+      color: black;
+      font-style: normal;
+      font-weight: bold;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
-
-
-@media (max-width: 768px) {
-  .slick-prev {
-    left: 10px;
-  }
-  .slick-next {
-    right: 10px;
-  }
-  .next-button, .prev-button {
-    padding: 5px; /* Smaller padding for smaller screens */
-    font-size: 12px; /* Smaller font size for smaller screens */
-  }
-}
-    
   
     .prev-button:hover, .next-button:hover {
       color: white;

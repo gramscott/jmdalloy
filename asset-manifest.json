@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jmdalloy/static/css/main.6b88a796.css",
-    "main.js": "/jmdalloy/static/js/main.59695519.js",
+    "main.css": "/jmdalloy/static/css/main.9de9c8f7.css",
+    "main.js": "/jmdalloy/static/js/main.4183bd27.js",
     "static/js/592.acd9a8a8.chunk.js": "/jmdalloy/static/js/592.acd9a8a8.chunk.js",
     "static/media/black_and_white_alloy.mp4": "/jmdalloy/static/media/black_and_white_alloy.cb716326ce4ca186e3c2.mp4",
     "static/media/custom_colours_video.mp4": "/jmdalloy/static/media/custom_colours_video.465d3232f16a5865c7f7.mp4",
@@ -16,11 +16,11 @@
     "static/media/slideshow1.jpeg": "/jmdalloy/static/media/slideshow1.0712074457cb4b8560f9.jpeg",
     "static/media/slideshow2.jpeg": "/jmdalloy/static/media/slideshow2.b1cf5507055a76e3dee5.jpeg",
     "static/media/colour_change3.jpg": "/jmdalloy/static/media/colour_change3.1604538023d7e255efd6.jpg",
-    "static/media/colour_change2.jpeg": "/jmdalloy/static/media/colour_change2.c3d97f30cfef3b413cad.jpeg",
     "static/media/slideshow3.jpeg": "/jmdalloy/static/media/slideshow3.3e91beaf3699ac0f96ca.jpeg",
     "static/media/diamond_cutting2.jpg": "/jmdalloy/static/media/diamond_cutting2.cdc608a717c65cd5f026.jpg",
     "static/media/slideshow7.jpeg": "/jmdalloy/static/media/slideshow7.39c53192fa4b64063a27.jpeg",
     "static/media/alloy_wheel_ref_pic.JPG": "/jmdalloy/static/media/alloy_wheel_ref_pic.70b2c0b72f9f6da56e33.JPG",
+    "static/media/colour_change2.jpeg": "/jmdalloy/static/media/colour_change2.709d3a5cfba47e823de9.jpeg",
     "static/media/brake_caliper_main_pic.jpg": "/jmdalloy/static/media/brake_caliper_main_pic.9422682e31f35b72a64d.jpg",
     "static/media/josh.jpg": "/jmdalloy/static/media/josh.d501e13f6b664fb0d487.jpg",
     "static/media/diamond_cutting3.jpg": "/jmdalloy/static/media/diamond_cutting3.63d091417cb7e560a534.jpg",
@@ -32,12 +32,12 @@
     "static/media/slick.ttf": "/jmdalloy/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/jmdalloy/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/jmdalloy/index.html",
-    "main.6b88a796.css.map": "/jmdalloy/static/css/main.6b88a796.css.map",
-    "main.59695519.js.map": "/jmdalloy/static/js/main.59695519.js.map",
+    "main.9de9c8f7.css.map": "/jmdalloy/static/css/main.9de9c8f7.css.map",
+    "main.4183bd27.js.map": "/jmdalloy/static/js/main.4183bd27.js.map",
     "592.acd9a8a8.chunk.js.map": "/jmdalloy/static/js/592.acd9a8a8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6b88a796.css",
-    "static/js/main.59695519.js"
+    "static/css/main.9de9c8f7.css",
+    "static/js/main.4183bd27.js"
   ]
 }

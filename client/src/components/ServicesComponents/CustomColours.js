@@ -1,9 +1,9 @@
 import React, { useRef, forwardRef } from 'react';
-import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './NextPageServiceStyles.css';
 import customColoursVideo from '../../images/custom_colours_video.mp4';
+
 
 
 const CustomColours = forwardRef((props, ref) => {

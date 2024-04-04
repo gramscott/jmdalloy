@@ -17,6 +17,8 @@ const ColourChanges = () => {
     dots: false,
     infinite: true,
     speed: 500,
+    autoplay: true,
+    autoplaySpeed: 8000,
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,

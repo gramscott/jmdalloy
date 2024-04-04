@@ -9,6 +9,7 @@ import ColourChanges from './components/ServicesComponents/ColourChanges';
 import DiamondCutting from './components/ServicesComponents/DiamondCutting';
 import CustomColours from './components/ServicesComponents/CustomColours';
 import ScrollToTop from './components/ServicesComponents/ScrollToTop';
+import ServicesContainer from './containers/ServicesContainer';
 
 
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/alloy-wheel-refurbishment" element={<AlloyWheelRefurbishment />} />
         <Route path="/brake-caliper-resprays" element={<BrakeCaliperResprays />} />
         <Route path="/colour-changes" element={<ColourChanges/>} />
+        <Route path = "/services" element={<ServicesContainer/>} />
         <Route path="/diamond-cutting" element={<DiamondCutting/>} />
         <Route path="/custom-colours" element={<CustomColours/>} />
      </Routes>

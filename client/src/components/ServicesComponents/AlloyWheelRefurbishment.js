@@ -7,6 +7,7 @@ import AlloyWheelRefurbishment1 from '../../images/alloy_wheel_ref_pic.JPG';
 import AlloyWheelRefurbishment3 from '../../images/alloy_wheel_ref_3.jpg';
 import AlloyWheelRefurbishment4 from '../../images/alloy_wheel_ref_4.jpg';
 
+
 const AlloyWheelRefurbishment = () => { 
 
   const sliderRef = useRef(null);
@@ -17,6 +18,8 @@ const AlloyWheelRefurbishment = () => {
     dots: false,
     infinite: true,
     speed: 500,
+    autoplay: true,
+    autoplaySpeed: 8000,
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,

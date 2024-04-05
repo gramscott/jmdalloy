@@ -90,7 +90,7 @@ margin-right: 10px;
     width: 100%;
   }
 
-  .contact-item, .contact-item b {
+  .contact-item, .contact-item b, .contact-item-non-link {
     font-size: 0.9rem;
   }
 }

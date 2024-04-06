@@ -13,7 +13,6 @@ import slideShow4 from '../images/slideshow4.jpeg'
 import slideShow5 from '../images/slideshow5.jpeg'
 import slideShow6 from '../images/slideshow6.jpeg'
 import slideShow7 from '../images/slideshow7.jpeg'
-import slideShow8 from '../images/slideshow8.jpeg'
 
 const ServicesContainer = () => {
 
@@ -120,11 +119,6 @@ const ServicesContainer = () => {
       id: 7,
       image: slideShow7,
       alt: 'slide 7'
-    },
-    {
-      id: 8,
-      image: slideShow8,
-      alt: 'slide 8'
     }
   ];
 

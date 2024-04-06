@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/jmdalloy/static/css/main.3d495e38.css",
-    "main.js": "/jmdalloy/static/js/main.b03bd9ba.js",
+    "main.js": "/jmdalloy/static/js/main.7d45801c.js",
     "static/js/592.acd9a8a8.chunk.js": "/jmdalloy/static/js/592.acd9a8a8.chunk.js",
     "static/media/black_and_white_alloy.mp4": "/jmdalloy/static/media/black_and_white_alloy.cb716326ce4ca186e3c2.mp4",
     "static/media/custom_colours_video.mp4": "/jmdalloy/static/media/custom_colours_video.465d3232f16a5865c7f7.mp4",
@@ -16,7 +16,6 @@
     "static/media/slideshow1.jpeg": "/jmdalloy/static/media/slideshow1.0712074457cb4b8560f9.jpeg",
     "static/media/slideshow2.jpeg": "/jmdalloy/static/media/slideshow2.b1cf5507055a76e3dee5.jpeg",
     "static/media/colour_change3.jpg": "/jmdalloy/static/media/colour_change3.1604538023d7e255efd6.jpg",
-    "static/media/slideshow8.jpeg": "/jmdalloy/static/media/slideshow8.c3d97f30cfef3b413cad.jpeg",
     "static/media/slideshow3.jpeg": "/jmdalloy/static/media/slideshow3.3e91beaf3699ac0f96ca.jpeg",
     "static/media/diamond_cutting2.jpg": "/jmdalloy/static/media/diamond_cutting2.cdc608a717c65cd5f026.jpg",
     "static/media/slideshow7.jpeg": "/jmdalloy/static/media/slideshow7.39c53192fa4b64063a27.jpeg",
@@ -34,11 +33,11 @@
     "static/media/slick.woff": "/jmdalloy/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/jmdalloy/index.html",
     "main.3d495e38.css.map": "/jmdalloy/static/css/main.3d495e38.css.map",
-    "main.b03bd9ba.js.map": "/jmdalloy/static/js/main.b03bd9ba.js.map",
+    "main.7d45801c.js.map": "/jmdalloy/static/js/main.7d45801c.js.map",
     "592.acd9a8a8.chunk.js.map": "/jmdalloy/static/js/592.acd9a8a8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3d495e38.css",
-    "static/js/main.b03bd9ba.js"
+    "static/js/main.7d45801c.js"
   ]
 }

@@ -1,1 +1,3 @@
-https://jmdalloys.co.uk/![image](https://github.com/gramscott/jmdalloy/assets/120787031/c8d511d1-ac3d-4879-a4aa-b5792caf5a59)
+Click on the link below to view my website:
+
+https://jmdalloys.co.uk/

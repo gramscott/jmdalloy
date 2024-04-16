@@ -54,7 +54,7 @@ const CustomColours = forwardRef((props, ref) => {
         <p className='pb-4'>
         We offer a range of <strong>candy and flip paints</strong> that can be tailored to your <strong>individual style and preference</strong>.
         </p>
-        <a href='/jmdalloys.co.uk'  className='home-button'>Home</a>
+        <a href='https://jmdalloys.co.uk' className='home-button'>Home</a>
         </div>
 
     

@@ -90,7 +90,7 @@ const AlloyWheelRefurbishment = () => {
        <li className='process'>Lacquer is applied to give a gloss, satin or Matt finish then baked and cured.</li>
       <li className='process'>Tyres are fitted back on the wheels then fully balanced and fitted back on the car.</li>
       </ol>
-      <a href='/jmdalloy' className='home-button'>Home</a>
+      <a href='/jmdalloys.co.uk' className='home-button'>Home</a>
       </div>
 
     </div>

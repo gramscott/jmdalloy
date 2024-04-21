@@ -41,7 +41,7 @@ const ContactDetails = () => {
 </b>
         </div>
         <div className='contact-item-non-link'>
-          <b>Monday-Friday: 08:30 - 17:00</b>
+          <b>Monday-Friday: 08:30 - 17:30</b>
         </div>
         <div className='contact-item-non-link'>
           <b>Saturday-Sunday: Closed</b>

@@ -6,7 +6,7 @@ import { Element } from 'react-scroll';
 import NavBar from '../NavBar/NavBar.js';
 import ReviewContainer from './ReviewContainer.js';
 import FaqContainer from './FaqContainer.js';
-import Footer from '../Footer/Footer.js';
+// import Footer from '../Footer/Footer.js';
 
 const MainLandingPage = () => {
 
@@ -29,7 +29,7 @@ const MainLandingPage = () => {
     <Element name='faq'>
         <FaqContainer/>
     </Element>
-    <Footer/>
+    {/* <Footer/> */}
     </div>
   )
 }
